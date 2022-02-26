@@ -43,42 +43,49 @@
         </header>
     <main>
         <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rem nisi numquam saepe facilis repudiandae non
+            <h1 class="hacete">¡Hacete socio!</h1>
+            <p class="quiero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rem nisi numquam saepe facilis repudiandae non
                 accusantium dolores? Corporis error quidem quisquam! Excepturi sit esse, libero quas laudantium deserunt ex?
             </p>
         </section>
     
         <section>
             <form action="" method="post" enctype="">
+                <div class="quiero-form">
+                <label class="quiero-tipo" for="name">Nombres</label>
+                <input class="quiero-input" type="text" id="name" name="name">
     
-                <label for="name">Nombres</label>
-                <input type="text" id="name" name="name">
+                <label class="quiero-tipo" for="name">Apellido</label>
+                <input class="quiero-input" type="text" id="name" name="name">
     
-                <label for="name">Apellido</label>
-                <input type="text" id="name" name="name">
+                <label class="quiero-tipo" for="dni">DNI</label>
+                <input class="quiero-input" type="text" id="dni" name="dni">
     
-                <label for="dni">DNI</label>
-                <input type="text" id="dni" name="dni">
+                <label class="quiero-tipo" for="email">e-mail</label>
+                <input class="quiero-input" type="email" id="email" name="email">
     
-                <label for="email">e-mail</label>
-                <input type="email" id="email" name="email">
+                <label class="quiero-tipo" for="nacimiento">Fecha de nac.</label>
+                <input class="quiero-input" type="date" id="nacimiento" name="nacimiento">
     
-                <label for="nacimiento">Fecha de nac.</label>
-                <input type="date" id="nacimiento" name="nacimiento">
+                <label class="quiero-tipo" for="nacionalidad">Nacionalidad</label>
+                <input class="quiero-input" type="text" id="nacionalidad" name="nacionalidad">
     
-                <label for="nacionalidad">Nacionalidad</label>
-                <input type="text" id="nacionalidad" name="nacionalidad">
-    
-                <label for="telefono">Nro. de contacto</label>
-                <input type="text" id="telefono" name="telefono">
-    
+                <label class="quiero-tipo" for="telefono">Nro. de contacto</label>
+                <input class="quiero-input" type="text" id="telefono" name="telefono">
+            </div>
+            
+                <section class="novedades">
+                    <div class="aceptar-novedades">
                 <label for="aceptar">Aceptar recibir novedades sobre Club Atlético Alvarado</label>
                 <input type="checkbox" name="aceptar" id="aceptar">
-    
+            </div>
+            <div class="aceptar-novedades">
                 <label for="aceptar">Aceptar términos y condiciones</label>
                 <input type="checkbox" name="aceptar" id="aceptar">
+            </div>
+            </section>
     
-                <button type="submit">Enviar</button>
+                <button class="quiero-button" type="submit">Enviar</button>
             </form>
         </section>
     </main>
@@ -107,7 +114,7 @@
         <img src="./img/iconos/copyright.png" alt="Ícono Copyright" width="15" height="15">
     </section>
 
-    <section>
+    <section class="ubicacion">
 
         <div class="footer-redes">
             <a href=><img src="./img/iconos/whatsapp.png" alt="Ícono whatsapp" width="40"></a>
