@@ -11,10 +11,39 @@
 
   header {
     height: 250%;
-    background-image:linear-gradient(#ffff, #04042f);
-    padding: 1rem;
+background-color: #ddd;    padding: 1rem;
   }
 
+.header-top {
+  background-color: #04042f;
+  display: flex;
+  justify-content: space-between;
+}
+.header-top p {
+  font-size: 20px;
+  
+}
+.header-top ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-top ul li {
+  margin-left: 1rem;
+  border-radius:20px;
+  padding: 4px 10px;
+  background-color: rgba(4, 4, 47, 0.8);
+  font-weight: bold;
+  
+}
+
+.header-top a {
+  display: inline-block;
+  color:#fff;
+  text-decoration: none;
+
+}
 
   .hola {
     font-weight: bold;
@@ -41,30 +70,9 @@
 
   .hola_sitio {
     font-size: 45px;
-    color: rgb(124, 156, 176);
+    color:#053159;
   }
-
-  .header-top ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .header-top ul li {
-    margin-left: 1rem;
-    border-radius:20px;
-    padding: 4px 10px;
-    background-color: rgba(4, 4, 47, 0.8);
-    font-weight: bolder;
-    
-  }
-
-  .header-top a {
-    display: inline-block;
-    color:#fff;
-
-  }
+  
 
   .tienda {
     align-self: flex-end;
@@ -81,9 +89,14 @@
     text-decoration: none;
   }
 
+  .drop {
+    color: #040431;
+    font-weight: bold;
+    padding: 0;
+  }
 
 main{
-    background-color: #053159;
+    background-image:linear-gradient(#04042f, #ddd 10%, #04042f);
     background-position: center;
     color: #04042f;
     display: grid;
@@ -145,7 +158,7 @@ main section h2 {
     margin-left: 30px;
     margin-bottom: 25px;
     padding: 20px;
-    color: #7c9cb0;
+    color:#053159;
 }
 
 .notas {
@@ -165,9 +178,6 @@ main section div article {
 main section div article div {
     border-style: 1px solid;
     background-color:#7c9cb0;
-    margin-right: 50px;
-    margin-left: 4px;
-    margin-top: -8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,36 +187,41 @@ main section div article div {
 main section div article div p {
     padding: 30px 20px;
     font-size: 20px;
-text-align:center;
-margin-left: 3px;
+    text-align:center;
+    margin-left: 3px;
     
 }
 
-
+main section div article div img {
+  max-width: 100%;
+}
 
 .title-article-infantil {
-    background-color:rgb(87, 184, 214);
-    margin-left: 1px;
+    background-color:rgb(159, 223, 243);
+    margin-bottom: 0;
     padding: 4px;
     display: inline-block;
     color: black;
+    font-weight: bold;
 }
 
 .title-article-nacional {
     background-color: rgb(184, 165, 214);
-    margin-left: 1px;
+    margin-bottom: 0;
     padding: 4px;
     display: inline-block;
     color: black;
+    font-weight: bold;
 }
 
 .title-article-local {
     background-color: rgb(207, 183, 171);
-    margin-left: 1px;
+    margin-bottom: 0;
     padding: 4px;
     display: inline-block;
     color: black;
-}
+    font-weight: bold;
+} 
 
 
 
@@ -214,11 +229,11 @@ margin-left: 3px;
   text-align: right;
   margin-bottom: 2rem;
   font-size: 48px;
-  
+  margin-left: 0;
 }
 .table-direction {
   justify-self: center;
-  margin: 4%;
+  margin: 40px;
 }
 
 
@@ -228,15 +243,17 @@ margin-left: 3px;
   list-style: none;
   display: grid;
   background-color: rgba(255, 255, 255, 0.6);
+  padding: 0;
 }
 
+
 .table--posiciones {
-  grid-template-columns: 60px 190px repeat(6,80px);
+  grid-template-columns: 60px 100px repeat(6,1fr);
   gap: 5px;
-  max-width: 765px;
   text-align: center;
-  margin-left: auto;
-  margin-right: 15px;
+  max-width: 100%;
+  
+  
 }
 
 .table-alva {
@@ -262,6 +279,8 @@ margin-left: 3px;
 .table-mas {
     display: flex;
     justify-content: right;
+    margin-top: 15px;
+    font-style: italic;
     color: #fff;
     cursor: pointer;
 }
@@ -281,92 +300,50 @@ margin-left: 3px;
 
 .acceso-title{
   font-size: 50px;
-  font-weight: bolder;
   background-image: linear-gradient(white,#7c9cb0);
-  text-align: center;
-  margin-left: 40px;
+  color:#04042f;
+  padding: 30px;
+  text-transform:uppercase;
+  font-family: monospace;
+
 }
 
 .acceso-sub {
-  padding-top: 3px;
-  font-size: 55px;
-  font-variant: small-caps;
-  color: #fff;
+  font-size: 58px;
+  padding: 10px;
+  max-width: 1500px;
+  padding-left: 35px;
   text-align: center;
-
-}
-
-
-
-main section form {
-  display: grid;
-  justify-content: center;
-
-}
-
-main section form label {
-  font-size: 30px;
-  padding-right: 10px;
-  color:#7c9cb0;
-  font-weight: bolder;
-
-}
-
-main section form input {
-  width: 300px;
-  height: 40px;
-  
-}
-
-button {
-  background-color: #7c9cb0;
   color: #fff;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 10px;
-  margin-top: 40px;
-cursor: pointer;
 }
 
 
-main section form a {
+.label-recordar {
+  color: #ddd;
+}
+
+.bg-card {
+  background-color:#7c9cb0;
   color: #fff;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 5px;
-
 }
 
-main section aside {
-  display: grid;
-  grid-template-columns: 1;
-  padding-top: 10px;
-  justify-content: center;
-}
-
-main section aside p {
-  font-size: 28px;
-  font-weight: bolder;
-  background-color: #04042f;
-  color: #fff;
-  margin-top: 15px;
-  
-}
-
-
-main section aside img {
-  margin-bottom: 70px;
-  margin-top: 40px;
-  margin-left: 60px;
-  transition: transform 0.5s;
+.zoom-lyon {
+  transition: transform 0.5s ease;
   overflow: hidden;
   cursor: pointer;
-
+  margin: 20px;
 }
 
-main section aside img:hover {
+.zoom-lyon:hover {
   transform: scale(1.2);
 }
+
+.ad-registro {
+    font-size: 38px;
+    
+}
+
+
 
 
 /* Quiero ser socio */
@@ -504,7 +481,7 @@ margin:30px;
 
 
 footer {
-    background-color:#040431;
+    background-color:#acbcc7;
     color: #fff;
     padding: 1rem;
     display: grid;
@@ -588,85 +565,93 @@ footer section h4 {
 }
 
 
-@media (max-width: 1020px)
+@media (max-width: 1024px)
 {
 
-
-.header-top ul {
-  justify-content: flex-end;
+.header-top {
+  justify-content:space-between;
+}
+.header-top p {
+  font-size: 16px;
 }
 
+
 .header-top ul li {
-  font-size: 12px;
+  font-size: 13px;
+  padding: 5px;
 }
 
 
 .hola_club {
-font-size: 58px;
+font-size: 68px;
 }
 
 .hola_sitio {
-  font-size: 38px;
+  font-size: 48px;
 }
 
 .hola_logo {
-  width: 90px;
+  width: 120px;
 }
 
-.tienda {
-  margin-right: 1%;
-}
 
 .tienda a {
-  font-size: 12px;
-  
+  font-size: 14px;
+
 }
 
 
 .section-partidos {
-  padding: 20px 30px;
-  margin: 20px 20%;
-  width: 55%;
-  background-image:radial-gradient(#7c9cb0,#053159, white);
+  margin: 0 auto;
+  width: 80%;
+  
 }
 
 .ultimo h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .ultimo h4 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .proximo h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .proximo h4 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .notas {
-  grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat (2, 1fr);
+  max-width: 70%;
 }
 
 main section h2 {
-  font-size: 56px;
+  margin: 35px 15px;
+  font-size: 54px;
 }
 
 article img {
-  width: 220;
-  height: 220;
-}
-main section div article {
-  max-width:100%;
-  padding: 20px 20px;
+  width: 75%;
+  height: 75%;
 }
 
+
+
+main section div article {
+  max-width:80%;
+  padding: 15px 0;
+}
+
+main section div article div { 
+  margin: 0;
+  height: 130%;
+}
 
 main section div article div p {
-font-size: 16px;
+font-size: 18px;
 }
 
 .table-title {
@@ -674,7 +659,7 @@ font-size: 16px;
 }
 
 .table-direction {
-  margin-top: 12%;
+  margin-top: 15px;
 }
 
 .table_heading {
@@ -682,9 +667,8 @@ font-size: 16px;
 }
 
 .table--posiciones{
-  grid-template-columns:repeat(7, 65px);
+  grid-template-columns:repeat(7, 1fr);
   gap: 3px;
-  max-width: 473px;
   margin: 0 auto;
 }
 .table-responsive {
@@ -693,56 +677,61 @@ font-size: 16px;
 
 
 footer {
-  grid-template-rows: repeat(2, 120px);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 footer section h4 {
-  font-size: 18px;
-  padding-top: 12px;
+  font-size: 24px;
+  padding-top: 15px;
 }
 .club {
-  width: 24;
+  width: 50px;
   height: auto;
 }
 
 .direccion img {
-  width: 15;
-  height: 15;
+  width: 22px;
+  height: 22px;
 }
 
 .telefono img {
-  width: 15;
-  height: 15;
+  width: 22px;
+  height: 22px;
 }
 
 .mail img {
-  width: 15;
-  height: 15;
+  width: 15px;
+  height: 15px;
 }
 
 .direccion p {
-  font-size: 14px;
+  font-size: 16px;
 } 
 
 .telefono p {
-font-size: 14px;
+font-size: 16px;
 }
 
 .email {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .copyright {
-  grid-area: 2 / 3 / 3 / 2;
+ order: 1;
+ margin: 0 auto;
+grid-column-start: 1;
+grid-column-end: 3;
+
 }
 
 .copyright img {
 width: 18px;
 height: auto;
-padding-left: 5px;
+padding-left: 6px;
+padding-bottom: 2px;
 }
 .copyright p {
-  font-size: 12px;
+  font-size: 14px;
   
 }
 
@@ -762,86 +751,107 @@ width: 50%;
   align-items:center;
 }
 .footer-sponsor .lyon {
-width: 28%;
+width: 38%;
 height: auto;
 padding-bottom: 15px;
 }
 
 .footer-sponsor .weber {
-  width: 23%;
+  width: 33%;
   height: auto;
+  padding-bottom: 15px;
   }
   .footer-sponsor .sierra {
-    width: 18%;
+    width: 28%;
     height: auto;
     }
 
 /* Acceso socios */
 
+
 .acceso-title {
-  font-size: 24px;
+  font-size: 34px;
 }
 
 .acceso-sub {
-  font-size: 22px;
+  font-size: 32px;
 }
 
-main section form label{
-font-size: 16px;
+.div-acceso {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-main section form input {
-  width: 180px;
-  height: 30px;
-  
-}
-
-button {
-  font-size: 16px;
-}
-
-main section form a {
-  font-size: 14px;
-}
-
-main section aside p {
- display: none;
-}
-
-main section aside img {
-  display: none;
+.ad-registro {
+  font-size: 28px;
+  text-align: center;
 }
 
 }
 
 @media (max-width: 768px) {
 
-  .header-top ul li {
-    font-size: 6px;
+  header {
+    padding-bottom: 2px;
   }
 
+  .header-top {
+    justify-content:space-between;
+  }
+  .header-top p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+.header-top ul {
+  flex-wrap: wrap;
+  
+}
+
+  .header-top ul li {
+    font-size: 12px;
+    margin: auto;
+    padding: 3px 5px;
+  }
+
+  .header-top form {
+    display: none;
+  } 
+
+  .hola {
+    flex-direction: column;
+
+  }
   .hola_club {
-    font-size: 22px;
+    font-size: 28px;
     }
     
     .hola_sitio {
-      font-size: 15px;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
     }
     
     .hola_logo {
-      width: 40px;
+      width: 50px;
     }
 
     .tienda {
-      margin-right: 0%;
+      flex-wrap: wrap;
+
+      
     }
 
     .tienda a {
-      font-size: 7px;
+      font-size: 10px;
+      padding: 4px 5px;
+
     }
     
     .section-partidos {
-      width: 55%;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 30px;
     }
     .ultimo h3 {
       font-size: 16px;
@@ -861,25 +871,36 @@ main section aside img {
 
     main section h2 {
       font-size: 36px;
+      margin: 28px 15px;
+    }
+    .notas {
+      grid-template-columns: 1fr;
+      max-width: 50%;
     }
 
     article img {
       width: 100%;
-      height: 100%;
+      height: 80%;
     }
     main section div article {
-      max-width:190%;
-      padding: 20px 20px;
+      max-width:100%;
+      max-height: 70%;
+      padding: 15px 0;
+    }
+
+    main section div article div { 
+      margin: 0;
     }
 
     main section div article div p {
-      font-size: 14px;
+      font-size: 12px;
       }
       
 
     .table-title {
       font-size: 24px;
       text-align: center;
+      margin: 0 auto;
     }
 
     .table_heading {
@@ -887,11 +908,11 @@ main section aside img {
     }
     
     .table-direction {
-      margin-top: 8%;
+      margin-top: 30px;
     }
 
     .table--posiciones{
-      grid-template-columns:repeat(7, 50px);
+      grid-template-columns:repeat(7, 1fr);
       font-size: 12px;
     }
     .table-pos {
@@ -899,119 +920,136 @@ main section aside img {
     }
     
     footer {
-      grid-template-columns: repeat(3, 140px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-datos {
+      margin: 0 auto;
     }
 
     footer section h4 {
-      font-size: 12px;
+      font-size: 16px;
       padding-top: 8px;
     }
 
     footer section div img {
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
     }
     .club {
-      width: 22px;
-      height: 22px;
+      width: 26px;
+      height: 26px;
     }
     
-  
+  .mail {
+    width: 26px;
+    height: 30px;
+  }
     
     .direccion p {
-      font-size: 9px;
+      font-size: 12px;
     } 
     
     .telefono p {
-    font-size: 9px;
+    font-size: 12px;
     }
     
     .email {
-      font-size: 9px;
+      font-size: 12px;
     }
     
     .copyright {
-      grid-column-start: 1;
-      grid-column-end: 4;
-    }
-    
-    .copyright img {
-    width: 18px;
-    height: auto;
-    padding-left: 2px;
-    }
-    .copyright p {
-      font-size: 12px;
+      order: 2;
+      display: flex;
       
     }
     
   
+    .copyright img {
+    width: 14px;
+    height: auto;
+    
+    }
+    .copyright p {
+      font-size: 10px;
+    }
+     
+  
     
     .footer-redes {
-     display: none;
-      
+     display: flex;
+     margin-top: 10px;
+    }
+
+    .footer-redes a {
+      width: 30px;
+      height: 30px;
     }
     
     .footer-sponsor {
       display: flex;
       flex-direction: column;
       align-content: flex-start;
-      margin-top: 2%;
+      margin-top: 15px;
     }
     .footer-sponsor .lyon {
-    width: 48%;
+    width: 38%;
     height: auto;
     padding-bottom: 15px;
   
     }
     
     .footer-sponsor .weber {
-      width: 35%;
+      width: 25%;
       height: auto;
       padding-bottom: 15px;
       }
       .footer-sponsor .sierra {
-        width: 40%;
+        width: 30%;
         height: auto;
         }
 
       /* Acceso socios */
 
+      .main-order {
+        flex-direction: column;
+      }
+
       .acceso-title {
-        font-size: 16px;
+        font-size: 24px;
+        margin: 0 auto;
       }
       
       .acceso-sub {
-        font-size: 14px;
-      }
-      
-      main section form label {
-        font-size: 14px;
-        margin-top: 15px;
-      }
-      
-      main section form input {
-        width: 120px;
-        height: 20px;
+        font-size: 22px;
+        margin: 15px;
         
       }
       
-      button {
-        font-size: 14px;
+      .cont-acceso {
+        margin: 0 auto;
+      }
+      .acceso-title {
+        font-size: 32px;
       }
       
-      main section form a {
-        font-size: 12px;
-        margin-bottom: 15px;
+      .acceso-sub {
+        font-size: 28px;
+        margin-bottom: 0;
       }
+  
+    
       
-      main section aside p {
-        display: none;
-      }
-      
-      main section aside img {
-        display: none;
+      .ad-registro {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 15px;
       }
 
+      .ad-publi {
+        max-width: 75%;
+        margin: 0 auto;
+      }
       
 }

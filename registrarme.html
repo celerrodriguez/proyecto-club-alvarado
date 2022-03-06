@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/club-atletico-alvarado.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +20,22 @@
     <body>
         <header>
             <nav class="header-top">
-                <ul>
+                <p class="text-light m-2">El equipo de la ciudad</p>
+                <div class="d-flex align-items-center">
+                <ul class="m-2">
                     <li><a href="./index.html"> Inicio</a></li>
-                    <li><a href="./acceso-socios.html"> Acceso a socios</a></li>
+                    <li><a href="./quiero-ser-socio.html"> ¡HACETE SOCIO!</a></li>
+                    <li><a href="./acceso-socios.html"> Acceso socios</a></li>
                     <li><a href="./registrarme.html">Registrarme</a></li>
-                    <li><a href="./quiero-ser-socio.html"> Quiero ser socio</a></li>
                     <li><a href="./contactenos.html"> Contáctenos</a></li>
                 </ul>
+                <form>
+                  <input class="m-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn mt-0" type="submit" >🔎</button>
+                </form>
+              </div>
             </nav>
-
+    
             <div class="hola">
                 <img class="hola_logo" src="./img/club-atletico-alvarado.png" alt="Logo del club" width="150" height="auto">
                 <div class="hola-flex">
@@ -40,6 +48,91 @@
                 </div>
             </div>
             
+            <section class="d-flex flex-wrap">
+              <div class="dropdown">
+                <a class="btn dropdown-toggle m-1 drop" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  El Club
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Historia</a></li>
+                  <li><a class="dropdown-item" href="#">Dirigencia</a></li>
+                  <li><a class="dropdown-item" href="#">Estatuto</a></li>
+                  <li><a class="dropdown-item" href="#">Escudo</a></li>
+                  <li><a class="dropdown-item" href="#">Villa deportiva</a></li>
+                  <li><a class="dropdown-item" href="#">Hinchada</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle m-1 drop" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Social
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Secretaria de género</a></li>
+                  <li><a class="dropdown-item" href="#">Comisión femenina</a></li>
+                  <li><a class="dropdown-item" href="#">Filiales</a></li>
+                  <li><a class="dropdown-item" href="#">ALVA solidario</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle m-1 drop" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Primera Nacional
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Equipo</a></li>
+                  <li><a class="dropdown-item" href="#">Cuerpo técnico</a></li>
+                  <li><a class="dropdown-item" href="#">Fixture</a></li>
+                  <li><a class="dropdown-item" href="#">Campeonato 2020/2021</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle m-1 drop" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Deportes
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Futbol</a></li>
+                  <li><a class="dropdown-item" href="#">Basquet</a></li>
+                  <li><a class="dropdown-item" href="#">Handball</a></li>
+                  <li><a class="dropdown-item" href="#">Voley</a></li>
+                  <li><a class="dropdown-item" href="#">Hockey</a></li>
+                  <li><a class="dropdown-item" href="#">Natación</a></li>
+                  <li><a class="dropdown-item" href="#">Gimnasio y Fitness</a></li>
+                  <li><a class="dropdown-item" href="#">Gimnasia artística</a></li>
+                  <li><a class="dropdown-item" href="#">Patín artístico</a></li>
+                  <li><a class="dropdown-item" href="#">Boxeo</a></li>
+                  <li><a class="dropdown-item" href="#">Tae-kwon-do</a></li>
+                  <li><a class="dropdown-item" href="#">Karate</a></li>
+                  <li><a class="dropdown-item" href="#">E-sports</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle m-1 drop" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Jardín de infantes
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Inscripciones 2022</a></li>
+                  <li><a class="dropdown-item" href="#">Directivos</a></li>
+                  <li><a class="dropdown-item" href="#">Galeria de fotos</a></li>
+                  <li><a class="dropdown-item" href="#">Actividades extracurriculares</a></li>
+          
+                </ul>
+              </div>
+              <div class="dropdown">
+                <a class="btn dropdown-toggle m-1 drop" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prensa
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Acreditaciones Primera nacional</a></li>
+                  <li><a class="dropdown-item" href="#">Departamento de prensa</a></li>
+                  <li><a class="dropdown-item" href="#">Fotografos</a></li>
+                </ul>
+              </div>
+            </section>
         </header>
     <main>
         <section>
@@ -140,6 +233,8 @@
             </div>
     </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 
 </html>
