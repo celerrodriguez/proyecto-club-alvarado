@@ -1,0 +1,55 @@
+.main-order {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .acceso-socios {
+    padding: 30px auto;
+  
+  }
+  
+  .acceso-title{
+    font-size: 50px;
+    background-image: linear-gradient($colorLight, $colorBlueL);
+    color:$colorBlueD;
+    padding: 30px;
+    text-transform:uppercase;
+    font-family: monospace;
+  
+  }
+  
+  .acceso-sub {
+    font-size: 58px;
+    padding: 10px;
+    max-width: 1500px;
+    padding-left: 35px;
+    text-align: center;
+    color: $colorLight;
+  }
+  
+  
+  .label-recordar {
+    color: #ddd;
+  }
+  
+  .bg-card {
+    background-color:$colorBlueL;
+    color: $colorLight;
+  }
+  
+  .zoom-lyon {
+    transition: transform 0.5s ease;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .zoom-lyon:hover {
+    transform: scale(1.2);
+  }
+  
+  .ad-registro {
+      font-size: 38px;
+      
+  }
