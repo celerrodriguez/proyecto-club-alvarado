@@ -1,10 +1,26 @@
+
+
+.section-partidos {
+  padding: 20px 30px;
+  margin: 20px 20%;
+  max-width: 900px;
+  background-image:radial-gradient($colorBlueL,$colorSecondary, $colorLight);
+  
+  
+} 
+
+.proximo {
+  @extend .ultimo
+}
+
 main{
-    background-image:linear-gradient($colorBlueD, #ddd 10%, $colorBlueD);
+    background-image:linear-gradient($colorBlueD, $colorLightD 10%, $colorBlueD);
     background-position: center;
     display: grid;
     grid-template-columns: 1fr;
 
-    section h2 {
+    section {
+      h2 {
         font-size: 75px;
         font-weight: bold;
         margin-top: 10px;
@@ -12,32 +28,39 @@ main{
         margin-bottom: 25px;
         padding: 20px;
         color:$colorSecondary;
+      }
 
-        div article {
-            padding-top: 25px;
-            max-width: 65%;
-            max-height: 75%;
-          }
-
-          div {
-            border-style: 1px solid;
+      div {
+        article {
+            padding-top: 15px;
+            max-width: 80%;
+            max-height: 100%;
             background-color: $colorBlueL;
+            margin: 25px;
+            
+            div {
+            border-style: 1px solid;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding-top: 20px;
-
+            
             p {
                 padding: 30px 20px;
-                font-size: 20px;
+                font-size: 18px;
                 text-align:center;
-                margin-left: 3px;
+                
                 
             }
             
             img {
               max-width: 100%;
+              width: 420px; 
+              height: 360px;
             }
+
+           }
+          }
         }
         
           
@@ -53,84 +76,10 @@ main{
     grid-template-rows: repeat(2, 1fr);
     margin: 0 auto;
     max-width: 75%;
-
-    &_infantil {
-        background-color:rgb(159, 223, 243);
-        margin-bottom: 0;
-        padding: 4px;
-        display: inline-block;
-        color: black;
-        font-weight: bold;
-    }
-    
-    &_nacional {
-        background-color: rgb(184, 165, 214);
-        margin-bottom: 0;
-        padding: 4px;
-        display: inline-block;
-        color: black;
-        font-weight: bold;
-    }
-    
-    &_local {
-        background-color: rgb(207, 183, 171);
-        margin-bottom: 0;
-        padding: 4px;
-        display: inline-block;
-        color: black;
-        font-weight: bold;
-    } 
 }
 
 
-.section-partidos {
-    padding: 20px 30px;
-    margin: 20px 20%;
-    width: 1000px;
-    background-image:radial-gradient($colorBlueL,$colorSecondary, $colorLight);
-    
-    
-  } 
-  
-  .ultimo {
-    flex-direction: column;
-    text-decoration: none;
-    margin-bottom: 15px;
-    line-height: 24px;
-    border: 4px solid $colorSecondary;
-    background-color:$colorBlueD;
-    color:$colorLight;
-    text-align: center;
-    padding: 10px;
 
-    h3 {
-        font-size: 22px;
-      }
-    h4 {
-        text-align: center;
-        font-size: 18px;
-      }
-  
-  }
-  
-  .proximo {
-    flex-direction: column;
-    text-decoration: none;
-    line-height: 24px;
-    border: 4px solid $colorSecondary;
-    background-color:$colorBlueD;
-    color:$colorLight;
-    text-align: center;
-    padding: 10px;
-
-    h3 {
-        font-size: 22px;
-      }
-    h4 {
-        text-align: center;
-        font-size: 18px;
-      }
-  }
 
   .table-title {
     text-align: right;
@@ -153,10 +102,10 @@ main{
 
     &_heading {
       background-color:$colorBlueL;
-      text-align: center;
+      @include parrafos (24px, center);
       font-weight:bolder;
       font-style: italic;
-      font-size: 24px;
+      
     }
 
     &_pos {

@@ -2,6 +2,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    form {
+      label {
+        width: 300px;
+      }
+    }
   }
   
   .acceso-socios {
@@ -20,11 +26,10 @@
   }
   
   .acceso-sub {
-    font-size: 58px;
+    @include parrafos (58px, center);
     padding: 10px;
     max-width: 1500px;
     padding-left: 35px;
-    text-align: center;
     color: $colorLight;
   }
   
@@ -43,12 +48,21 @@
     overflow: hidden;
     cursor: pointer;
     margin: 20px;
+    width: 285px; 
+    height: auto;
   }
   
   .zoom-lyon:hover {
     transform: scale(1.2);
   }
   
+ .ad-publi {
+    a {
+      width: 215px;
+      height: auto;
+    }
+ }
+
   .ad-registro {
       font-size: 38px;
       

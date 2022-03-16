@@ -37,13 +37,13 @@
             </nav>
     
             <div class="hola">
-                <img class="hola_logo" src="./img/club-atletico-alvarado.png" alt="Logo del club" width="150" height="auto">
+                <img class="hola_logo" src="./img/club-atletico-alvarado.png" alt="Logo del club" width="150" height="150">
                 <div class="hola-flex">
                     <h1 class="hola_club">Club Atlético Alvarado</h1>
                     <h2 class="hola_sitio">Sitio oficial</h2>
                 </div>
                 
-                <div class="tienda">
+                <div class="hola_tienda">
                     <a href="">Tienda Online</a>
                 </div>
             </div>
@@ -136,52 +136,74 @@
             
         </header>
     <main>
-        <section>
-            <h1 class="hacete">¡Hacete socio!</h1>
-            <p class="quiero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rem nisi numquam saepe facilis repudiandae non
-                accusantium dolores? Corporis error quidem quisquam! Excepturi sit esse, libero quas laudantium deserunt ex?
-            </p>
-        </section>
-    
-        <section>
-            <form action="" method="post" enctype="">
-                <div class="quiero-form">
-                <label class="quiero-tipo" for="name">Nombres</label>
-                <input class="quiero-input" type="text" id="name" name="name">
-    
-                <label class="quiero-tipo" for="name">Apellido</label>
-                <input class="quiero-input" type="text" id="name" name="name">
-    
-                <label class="quiero-tipo" for="dni">DNI</label>
-                <input class="quiero-input" type="text" id="dni" name="dni">
-    
-                <label class="quiero-tipo" for="email">e-mail</label>
-                <input class="quiero-input" type="email" id="email" name="email">
-    
-                <label class="quiero-tipo" for="nacimiento">Fecha de nac.</label>
-                <input class="quiero-input" type="date" id="nacimiento" name="nacimiento">
-    
-                <label class="quiero-tipo" for="nacionalidad">Nacionalidad</label>
-                <input class="quiero-input" type="text" id="nacionalidad" name="nacionalidad">
-    
-                <label class="quiero-tipo" for="telefono">Nro. de contacto</label>
-                <input class="quiero-input" type="text" id="telefono" name="telefono">
+
+      <div class="container cont-acceso">
+        
+        <div class="pt-3">
+          <div class="d-flex flex-column bd-highlight">
+            <div class="bg-acceso p-3 acceso-socios">
+              <h1 class="text-center display-1 acceso-title"><strong>¡Hacete socio/a!</strong> </h1>
+              <p class="h1. text-center fs-4 mt-3">Para comenzar el trámite completá los datos a continuación y a la brevedad nos pondremos en contacto.</p>
             </div>
-            
-                <section class="novedades">
-                    <div class="aceptar-novedades">
-                <label for="aceptar">Aceptar recibir novedades sobre Club Atlético Alvarado</label>
-                <input type="checkbox" name="aceptar" id="aceptar">
+        </div>
+        <div class="container">
+          <div class="row">
+            <form class="d-flex flex-wrap justify-content-center mb-5">
+            <div class="col-sm-12 col-md-6 col-lg-5">
+              <div class="m-3">
+                <label for="formGroupExampleInput" class="form-label fs-2"><strong>Nombre</strong></label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="m-3">
+                <label for="formGroupExampleInput" class="form-label fs-2"><strong>Apellido</strong></label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="m-3">
+                <label for="formGroupExampleInput" class="form-label fs-2"><strong>DNI</strong></label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              
+                <div class="m-3">
+                  <label for="formGroupExampleInput" class="form-label fs-2"><strong>Nacionalidad</strong></label>
+                  <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+  
             </div>
-            <div class="aceptar-novedades">
-                <label for="aceptar">Aceptar términos y condiciones</label>
-                <input type="checkbox" name="aceptar" id="aceptar">
+            <div class="col-sm-12 col-md-6 col-lg-5">
+              <div class="m-3">
+                <label for="formGroupExampleInput" class="form-label fs-2"><strong>Fecha de nac..</strong></label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="m-3">
+                <label for="formGroupExampleInput" class="form-label fs-2"><strong>Teléfono de contacto</strong></label>
+                <input type="text" class="form-control" id="formGroupExampleInput">
+              </div>
+              <div class="m-3">
+                <label for="exampleFormControlInput1" class="form-label fs-2"><strong>E-mail</strong></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+  
+
+              <div class="d-flex flex-column mt-4 p-4">
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label label-recordar" for="invalidCheck">Aceptar recibir novedades sobre Club Atlético Alvarado</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label label-recordar" for="invalidCheck">Aceptar términos y condiciones</label>
+                </div>
+
+                <div class="align-self-end">
+                  <button type="submit" class="btn bg-card fs-5 m-3 mb-5">Enviar</button>
+                </div>
             </div>
-            </section>
-    
-                <button class="quiero-button" type="submit">Enviar</button>
-            </form>
-        </section>
+          </form>
+          </div>
+        </div>
+        
     </main>
     <footer>
         <section class="footer-datos">

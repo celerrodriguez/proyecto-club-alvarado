@@ -37,13 +37,13 @@
             </nav>
     
             <div class="hola">
-                <img class="hola_logo" src="./img/club-atletico-alvarado.png" alt="Logo del club" width="150" height="auto">
+                <img class="hola_logo" src="./img/club-atletico-alvarado.png" alt="Logo del club" width="150" height="150">
                 <div class="hola-flex">
                     <h1 class="hola_club">Club Atlético Alvarado</h1>
                     <h2 class="hola_sitio">Sitio oficial</h2>
                 </div>
                 
-                <div class="tienda">
+                <div class="hola_tienda">
                     <a href="">Tienda Online</a>
                 </div>
             </div>
@@ -136,39 +136,58 @@
             
         </header>
     <main>
-        <section>
-            <h1 class="hacete">Contactános</h1>
-            <p class="quiero-text contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-        <section class="contact-order">
-        <section>
-            <div>
-            <form class="form-contacto" action="" method="post" enctype="">
+
+      <div class="container cont-acceso">
         
-                <label for="name">Nombre y apellido</label>
-                <input type="text" id="name" name="name">
-        
-                <label for="email">e-mail</label>
-                <input type="email" id="email" name="email">
-        
-                <label for="telefono">Teléfono</label>
-                <input type="text" id="telefono" name="telefono">
-        
-                <input class="msj" type="text" placeholder="Escriba su consulta...">
+        <div class="pt-3">
+          <div class="d-flex flex-column bd-highlight">
+            <div class="bg-acceso p-3 acceso-socios">
+              <h1 class="text-center display-1 acceso-title"><strong>CONTACTÁNOS</strong> </h1>
+              <p class="h1. text-center fs-4">Ingrese los datos personales requeridos y a continuación su consulta. La misma será respondida a la brevedad.</p>
             </div>
-            <div>
-                <button class="quiero-button contact-button" type="submit">Enviar</button>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-md-12 col-lg-6">
+              <form class="d-flex flex-column">
+  
+                <div class="mb-3 mt-3">
+                  <label for="formGroupExampleInput" class="form-label fs-2" ><strong>Nombre y Apellido</strong></label>
+                  <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>  
+
+                <div class="mb-2">
+                  <label for="exampleFormControlInput1" class="form-label fs-2"><strong>E-mail</strong></label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">    
+                </div>
+
+                <div class="mb-2">
+                  <label for="formGroupExampleInput" class="form-label fs-2" ><strong>Teléfono</strong></label>
+                  <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+
+                <div class="mb-2 mt-1">
+                  <label for="exampleFormControlTextarea1" class="form-label"></label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escriba su consulta..." rows="6"></textarea>
+                </div>
+
+                <div class="align-self-end">
+                  <button type="submit" class="btn bg-card m-3 mb-5 fs-5">Enviar</button>
+                </div>
+
+              </form>
             </div>
-            </form>
-        </section>
+
         
-        <section>
-            <aside class="contact-aside"> 
-                <p>¡Lo nuevo de Lyon para Alvarado!</p>
-                <img src="./img/conjunto-de-entrenamiento.png" alt="Nuevo conjunto de entrenamiento Lyon" width="275" height="auto">
-            </aside>
-        </section>
-    </section>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <aside class="text-center d-flex flex-column ad-publi">
+            <p class="h1. ad-registro"><strong>¡Lo nuevo de Lyon para Alvarado!</strong></p>
+            <img class="rounded mx-auto d-block zoom-lyon img-fluid" src="./img/conjunto-de-entrenamiento.png" alt="Nuevo conjunto de entrenamiento Lyon">
+            <a class="rounded mx-auto mb-5 mt-4" href="https://www.instagram.com/lyonoficial.ok/?hl=es-la"><img
+                  src="./img/lyon.svg" alt="Nuevo conjunto de entrenamiento Lyon"></a>
+          </aside>
+        </div>
+    
     </main>
     <footer>
         <section class="footer-datos">

@@ -8,3 +8,45 @@ body {
     font-family: "Dongle", sans-serif;
     font-family: "Source Sans Pro", sans-serif;
   }
+
+ 
+
+
+  @mixin parrafos ($size, $alineacion){
+      font-size: $size;
+      text-align: $alineacion;
+  }
+
+  .ultimo{
+    flex-direction: column;
+  text-decoration: none;
+  margin-bottom: 15px;
+  line-height: 24px;
+  border: 4px solid $colorSecondary;
+  background-color:$colorBlueD;
+  color:$colorLight;
+  text-align: center;
+  padding: 10px;
+
+  h3 {
+    font-size: 22px;
+  }
+h4 {
+  @include parrafos (18px, center);
+  }
+}
+
+
+
+  $mapTnotas: (nacional:#b8a5d6, local:#cfb7ab, infantil:#9fdff3);
+
+  @each $tnotas, $colors in $mapTnotas {
+    .notas_#{$tnotas} {
+        background-color: $colors;
+        padding: 6px 8px;
+        font-size: 18px;
+        display: inline-block;
+        color: black;
+        font-weight: bold;
+      }
+    }

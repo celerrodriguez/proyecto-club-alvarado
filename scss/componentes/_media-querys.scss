@@ -1,499 +1,475 @@
-@media (max-width: 1024px)
-{
+@media (max-width: 1024px) {
+  .header-top {
+    justify-content: space-between;
 
-.header-top {
-  justify-content:space-between;
-
-  p {
-    font-size: 16px;
-  }
-  
-  
-  ul li {
-    font-size: 13px;
-    padding: 5px;
-  }
-}
-
-
-.hola {
-  &_club {
-    font-size: 68px;
+    p {
+      font-size: 16px;
     }
-    
-  &_sitio {
+
+    ul li {
+      font-size: 13px;
+      padding: 5px;
+    }
+  }
+
+  .hola {
+    align-items: center;
+
+    &_club {
+      font-size: 68px;
+    }
+
+    &_sitio {
       font-size: 48px;
     }
-    
-  &_logo {
+
+    &_logo {
       width: 120px;
     }
-}
 
+    &_tienda {
+      a {
+      font-size: 14px;
+    }
+    }
+  }
 
-.tienda a {
-  font-size: 14px;
-
-}
-
-
-.section-partidos {
-  margin: 0 auto;
-  width: 80%;
   
-}
 
-.ultimo {
+  .section-partidos {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .ultimo {
     h3 {
-        font-size: 24px;
-      }
-      
-    h4 {
-        font-size: 20px;
-      }
-} 
+      font-size: 24px;
+    }
 
-.proximo {
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  .proximo {
     h3 {
-        font-size: 24px;
-      }
+      font-size: 24px;
+    }
     h4 {
-        font-size: 20px;
-      }
-}
+      font-size: 20px;
+    }
+  }
 
 
-
-.notas {
-  grid-template-columns: repeat (2, 1fr);
-  max-width: 70%;
-}
-
-main {
+  main {
     section {
-         h2 {
-             margin: 35px 15px;
-             font-size: 54px;
+      h2 {
+        margin: 35px 15px;
+        font-size: 54px;
+      }
+      div {
+        article {
+          padding: 15px 0;
+
+          div {
+            margin: 0;
+            height: 130%;
+
+            p {
+              font-size: 18px;
             }
-        div article {
-             max-width:80%;
-             padding: 15px 0;
-
-            div { 
-                margin: 0;
-                height: 130%;
-
-                p {
-                    font-size: 18px;
-                    }
-             }
+          }
         }
+      }
     }
-}
-
-article img {
-  width: 75%;
-  height: 75%;
-}
-
-
-.table-title {
-  font-size: 38px;
-}
-
-.table-direction {
-  margin-top: 15px;
-}
-
-.table_heading {
-  font-size: 16px;
-}
-
-.table--posiciones{
-  grid-template-columns:repeat(7, 1fr);
-  gap: 3px;
-  margin: 0 auto;
-}
-.table-responsive {
-  display: none;
-}
-
-
-footer {
-  grid-template-columns: repeat(2, 1fr);
-
-  section h4 {
-    font-size: 24px;
-    padding-top: 15px;
   }
-}
 
-
-.club {
-  width: 50px;
-  height: auto;
-}
-
-.direccion {
-img {
-  width: 22px;
-  height: 22px;
-}
-  p {
-    font-size: 16px;
-  } 
-
-}
-
-.telefono {
-  img {
-    width: 22px;
-    height: 22px;
+  .table-title {
+    font-size: 38px;
   }
-  p {
+
+  .table-direction {
+    margin-top: 15px;
+  }
+
+  .table_heading {
     font-size: 16px;
   }
-}
 
-.mail img {
-  width: 15px;
-  height: 15px;
-}
-
-
-.email {
-  font-size: 16px;
-}
-
-.copyright {
- order: 1;
- margin: 0 auto;
- grid-column-start: 1;
- grid-column-end: 3;
-
- p {
-    font-size: 14px;
-    
+  .table--posiciones {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    margin: 0 auto;
+  }
+  .table-responsive {
+    display: none;
   }
 
-}
+  footer {
+    grid-template-columns: repeat(2, 1fr);
 
-.ubicacion {
- grid-column-start:2;
- grid-column-end: 4;
-}
+    section h4 {
+      font-size: 24px;
+      padding-top: 15px;
+    }
+  }
 
-
-.footer-redes a img {
-width: 50%;
-}
-
-.footer-sponsor {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-
-  .lyon {
-    width: 38%;
+  .club {
+    width: 50px;
     height: auto;
-    padding-bottom: 15px;
+  }
+
+  .direccion {
+    img {
+      width: 22px;
+      height: 22px;
     }
-    
-  .weber {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .telefono {
+    img {
+      width: 22px;
+      height: 22px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .mail img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .email {
+    font-size: 16px;
+  }
+
+  .copyright {
+    order: 1;
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .ubicacion {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .footer-redes a img {
+    width: 50%;
+  }
+
+  .footer-sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .lyon {
+      width: 38%;
+      height: auto;
+      padding-bottom: 15px;
+    }
+
+    .weber {
       width: 33%;
       height: auto;
       padding-bottom: 15px;
-      }
-  .sierra {
-        width: 28%;
-        height: auto;
-        }
-}
+    }
+    .sierra {
+      width: 28%;
+      height: auto;
+    }
+  }
 
-/* Acceso socios */
+  /* Acceso socios */
 
+  .acceso-title {
+    font-size: 34px;
+  }
 
-.acceso-title {
-  font-size: 34px;
-}
+  .acceso-sub {
+    font-size: 32px;
+    margin: 0 auto;
+  }
 
-.acceso-sub {
-  font-size: 32px;
-}
+  .div-acceso {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-.div-acceso {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  .ad-registro {
+    font-size: 28px;
+    text-align: center;
+  }
 
-.ad-registro {
-  font-size: 28px;
-  text-align: center;
-}
-
+  .ad-publi {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
-
-    header {
-      padding-bottom: 2px;
-    }
-  
-    .header-top {
-      justify-content:space-between;
-
-      p {
-        font-size: 14px;
-        text-align: center;
-      }
-
-      ul {
-        flex-wrap: wrap;
-
-        li {
-            font-size: 12px;
-            margin: auto;
-            padding: 3px 5px;
-          }
-      }
-
-      form {
-        display: none;
-      }
-    }
-
-  
-    .hola {
-      flex-direction: column;
-
-      &_club {
-        font-size: 28px;
-        }
-
-      &_sitio {
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      &_logo {
-        width: 50px;
-      }
-    }
-
-      .tienda {
-        flex-wrap: wrap;
-
-        a {
-            font-size: 10px;
-            padding: 4px 5px;
-          }
-      }
-  
-
-      
-      .section-partidos {
-        width: 80%;
-        margin: 0 auto;
-        margin-top: 30px;
-      }
-
-      .ultimo {
-          h3 {
-              font-size: 16px;
-          }
-
-          h4 {
-            font-size: 12px;
-          }
-    }
-      
-
-    .proximo {
-        h3 {
-            font-size: 16px;
-        }
-
-        h4 {
-          font-size: 12px;
-        }
+  header {
+    padding-bottom: 2px;
   }
-    
 
-main {
+  .header-top {
+    justify-content: space-between;
+
+    p {
+      display: none;
+    }
+
+    ul {
+      flex-wrap: wrap;
+
+      li {
+        font-size: 12px;
+        margin: auto;
+        padding: 3px 5px;
+      }
+    }
+
+    form {
+      display: none;
+    }
+  }
+
+  .hola {
+    flex-direction: column;
+
+    &_club {
+      font-size: 28px;
+    }
+
+    &_sitio {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &_logo {
+      width: 50px;
+    }
+    &_tienda {
+      flex-wrap: wrap;
+  
+      a {
+        font-size: 10px;
+        padding: 4px 5px;
+      }
+    }
+  }
+
+  
+
+  .section-partidos {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .ultimo {
+    h3 {
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+  }
+
+  .proximo {
+    h3 {
+      font-size: 16px;
+    }
+
+    h4 {
+      font-size: 12px;
+    }
+  }
+
+  main {
     section {
       h2 {
         font-size: 36px;
         margin: 28px 15px;
       }
-      div article {
-        max-width:100%;
-        max-height: 70%;
-        padding: 15px 0;
+      div {
+        article {
+          margin: 0 auto;
+          width: 220px;
+          margin-bottom: 15px;
 
-        div { 
-            margin: 0;
-
+          div {
             p {
-                font-size: 12px;
-                }
+              font-size: 12px;
+            }
+            img {
+              max-width: 100%;
+              width: 380px;
+              height: 180px;
+            }
           }
-      }
-    }
-}
-
-      .notas {
-        grid-template-columns: 1fr;
-        max-width: 50%;
-      }
-  
-      article img {
-        width: 100%;
-        height: 80%;
-      }
-  
-      .table-title {
-        font-size: 24px;
-        text-align: center;
-        margin: 0 auto;
-      }
-  
-      .table_heading {
-        font-size: 14px;
-      }
-      
-      .table-direction {
-        margin-top: 30px;
-      }
-  
-      .table--posiciones{
-        grid-template-columns:repeat(7, 1fr);
-        font-size: 12px;
-      }
-      .table_pos {
-        font-size: 12px;
-      }
-      
-      footer {
-        display: flex;
-        flex-direction: column;
-
-        section {
-            h4 {
-                font-size: 16px;
-                padding-top: 8px;
-              }
-              div img {
-                width: 15px;
-                height: 15px;
-              }
         }
       }
-  
-      .footer-datos {
-        margin: 0 auto;
-      }
-  
+    }
+  }
 
-      .club {
-        width: 26px;
-        height: 26px;
+  .notas {
+    grid-template-columns: 1fr;
+    max-width: 75%;
+
+    &_infantil,
+    &_nacional,
+    &_local {
+      font-size: 12px;
+    }
+  }
+
+  .table-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .table_heading {
+    font-size: 14px;
+  }
+
+  .table-direction {
+    margin-top: 30px;
+  }
+
+  .table--posiciones {
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 12px;
+  }
+  .table_pos {
+    font-size: 12px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+
+    section {
+      h4 {
+        font-size: 16px;
+        padding-top: 8px;
       }
-      
-    .mail {
-      width: 26px;
+      div img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .footer-datos {
+    margin: 0 auto;
+  }
+
+  .club {
+    width: 26px;
+    height: 26px;
+  }
+
+  .mail {
+    width: 26px;
+    height: 30px;
+  }
+
+  .direccion p {
+    font-size: 12px;
+  }
+
+  .telefono p {
+    font-size: 12px;
+  }
+
+  .email {
+    font-size: 12px;
+  }
+
+  .copyright {
+    order: 2;
+    display: flex;
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .footer-redes {
+    display: flex;
+    margin-top: 10px;
+
+    a {
+      width: 30px;
       height: 30px;
     }
-      
-      .direccion p {
-        font-size: 12px;
-      } 
-      
-      .telefono p {
-      font-size: 12px;
-      }
-      
-      .email {
-        font-size: 12px;
-      }
-      
-      .copyright {
-        order: 2;
-        display: flex;
-        
-        p {
-            font-size: 10px;
-          }
-      }
-      
-      
-      .footer-redes {
-       display: flex;
-       margin-top: 10px;
-
-       a {
-        width: 30px;
-        height: 30px;
-      }
-      }
-  
-
-      
-      .footer-sponsor {
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        margin-top: 15px;
-
-        .lyon {
-            width: 38%;
-            height: auto;
-            padding-bottom: 15px;
-            }
-
-        .weber {
-            width: 25%;
-            height: auto;
-            padding-bottom: 15px;
-                }
-
-        .sierra {
-            width: 30%;
-            height: auto;
-                    }
-      }
-
-        /* Acceso socios */
-  
-        .main-order {
-          flex-direction: column;
-        }
-        
-        .cont-acceso {
-          margin: 0 auto;
-        }
-        .acceso-title {
-          font-size: 32px;
-          margin: 0 auto;
-        }
-        
-        .acceso-sub {
-          font-size: 28px;
-          margin: 0 auto;
-        }
-    
-      
-        
-        .ad-registro {
-          font-size: 18px;
-          text-align: center;
-          margin-top: 15px;
-        }
-  
-        .ad-publi {
-          max-width: 75%;
-          margin: 0 auto;
-        }
-        
   }
-  
+
+  .footer-sponsor {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 15px;
+
+    .lyon {
+      width: 38%;
+      height: auto;
+      padding-bottom: 15px;
+    }
+
+    .weber {
+      width: 25%;
+      height: auto;
+      padding-bottom: 15px;
+    }
+
+    .sierra {
+      width: 30%;
+      height: auto;
+    }
+  }
+
+  /* Acceso socios */
+
+  .main-order {
+    flex-direction: column;
+  }
+
+  .cont-acceso {
+    margin: 0 auto;
+  }
+  .acceso-title {
+    font-size: 32px;
+    margin: 0 auto;
+  }
+
+  .acceso-sub {
+    font-size: 28px;
+    margin: 0 auto;
+  }
+
+  .ad-registro {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .ad-publi {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+}

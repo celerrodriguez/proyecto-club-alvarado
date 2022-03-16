@@ -26,10 +26,10 @@ header {
       }
     }
 
-         a {
-  display: inline-block;
-  color:$colorLight;
-  text-decoration: none;
+     a {
+      display: inline-block;
+      color:$colorLight;
+      text-decoration: none;
 }
 }
 
@@ -37,7 +37,6 @@ header {
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding: 15px;
     
     &_club {
@@ -54,23 +53,26 @@ header {
     &_flex {
         padding: 0rem;
         flex-grow: 2;
+        justify-items: flex-start;
       }
+      
+    &_tienda {
+      align-self: flex-end;
+      justify-items: flex-end;
+      
+      a {
+          display: inline-block;
+          font-size: 22px;
+          background: $colorBlueL;
+          color: $colorLight;
+          text-align: center;
+          padding: 5px 15px;
+          border-radius: 10px;
+          text-decoration: none;
+        }
+    }
   }
 
-  .tienda {
-    align-self: flex-end;
-
-    a {
-        display: inline-block;
-        font-size: 22px;
-        background: $colorBlueL;
-        color: $colorLight;
-        text-align: center;
-        padding: 5px 15px;
-        border-radius: 10px;
-        text-decoration: none;
-      }
-  }
 
   .drop {
     color: $colorPrimary;
