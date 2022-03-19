@@ -1,17 +1,36 @@
 
+.partidos {
+  display: flex;
+  justify-content:space-evenly;
+  align-content: center;
+  padding: 30px;
+  color: $colorLight;
+  text-align: center;
+  background-color: $colorBlueD;
 
-.section-partidos {
-  padding: 20px 30px;
-  margin: 20px 20%;
-  max-width: 900px;
-  background-image:radial-gradient($colorBlueL,$colorSecondary, $colorLight);
-  
-  
-} 
+  &_fecha {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 
-.proximo {
-  @extend .ultimo
-}
+    p {
+      font-weight: bolder;
+    }
+  }
+
+  h3 {
+    font-weight: bolder;
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+ 
+  }
+
 
 main{
     background-image:linear-gradient($colorBlueD, $colorLightD 10%, $colorBlueD);
@@ -23,34 +42,50 @@ main{
       h2 {
         font-size: 75px;
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 15px;
         margin-left: 30px;
         margin-bottom: 25px;
         padding: 20px;
         color:$colorSecondary;
       }
 
+      .notas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: 0 auto;
+        max-width: 75%;
+    }
+
       div {
         article {
             padding-top: 15px;
-            max-width: 80%;
+            max-width: 70%;
             max-height: 100%;
             background-color: $colorBlueL;
             margin: 25px;
+            border-style: 15px solid;
+            border-radius: 20px;
             
             div {
-            border-style: 1px solid;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 20px;
+            ;
             
             p {
-                padding: 30px 20px;
+              margin-top: 15px;
+                padding: 0 20px;
                 font-size: 18px;
                 text-align:center;
-                
-                
+            }
+
+            a {
+              text-decoration: none;
+              color: $colorSecondary;
+              margin-top: 15px;
+              font-size: 18px;
+              
             }
             
             img {
@@ -70,13 +105,7 @@ main{
 
 
 
-.notas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 0 auto;
-    max-width: 75%;
-}
+
 
 
 
@@ -116,7 +145,7 @@ main{
   
   .table-alva {
     font-weight: bolder;
-    background-color: $colorBlueD;
+    background-color: $colorSecondary;
     color: $colorLight;
   }
 

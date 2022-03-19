@@ -34,7 +34,6 @@ header {
 }
 
 .hola {
-  max-width: 100%;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -52,6 +51,7 @@ header {
         flex-grow: 0;
       }
     &_flex {
+        width: 100%;
         padding: 0rem;
         flex-grow: 2;
         justify-items: flex-start;
@@ -64,7 +64,7 @@ header {
       a {
           display: inline-block;
           font-size: 22px;
-          background: $colorBlueL;
+          background: $colorBlueD;
           color: $colorLight;
           text-align: center;
           padding: 5px 15px;

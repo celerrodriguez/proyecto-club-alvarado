@@ -13,10 +13,11 @@
   }
 
   .hola {
-    align-items: center;
+  align-items: center;
 
     &_club {
       font-size: 68px;
+      
     }
 
     &_sitio {
@@ -26,6 +27,8 @@
     &_logo {
       width: 120px;
     }
+
+
 
     &_tienda {
       a {
@@ -249,6 +252,7 @@
 
     &_club {
       font-size: 28px;
+      text-align: center;
     }
 
     &_sitio {
@@ -258,7 +262,8 @@
     }
 
     &_logo {
-      width: 50px;
+      width: 80px;
+      height: 80px;
     }
     &_tienda {
       flex-wrap: wrap;

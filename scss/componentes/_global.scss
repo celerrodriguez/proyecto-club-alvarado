@@ -17,24 +17,24 @@ body {
       text-align: $alineacion;
   }
 
-  .ultimo{
-    flex-direction: column;
-  text-decoration: none;
-  margin-bottom: 15px;
-  line-height: 24px;
-  border: 4px solid $colorSecondary;
-  background-color:$colorBlueD;
-  color:$colorLight;
-  text-align: center;
-  padding: 10px;
+//   .ultimo{
+//     flex-direction: column;
+//   text-decoration: none;
+//   margin-bottom: 15px;
+//   line-height: 24px;
+//   border: 4px solid $colorSecondary;
+//   background-color:$colorBlueD;
+//   color:$colorLight;
+//   text-align: center;
+//   padding: 10px;
 
-  h3 {
-    font-size: 22px;
-  }
-h4 {
-  @include parrafos (18px, center);
-  }
-}
+//   h3 {
+//     font-size: 22px;
+//   }
+// h4 {
+//   @include parrafos (18px, center);
+//   }
+// }
 
 
 
@@ -43,10 +43,11 @@ h4 {
   @each $tnotas, $colors in $mapTnotas {
     .notas_#{$tnotas} {
         background-color: $colors;
-        padding: 6px 8px;
+        padding: 8px 10px;
         font-size: 18px;
         display: inline-block;
         color: black;
+        border-radius: 1rem;
         font-weight: bold;
       }
     }
