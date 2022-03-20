@@ -41,14 +41,12 @@ main{
 
       .plantel { 
         img {
-        width: 90%;
+        width: 100%;
       }
-        
+    }
 
     section {
-    
-    
-      }
+  
       h2 {
         font-size: 75px;
         font-weight: bold;
@@ -81,16 +79,16 @@ main{
             display: flex;
             flex-direction: column;
             align-items: center;
-            ;
             
-            p {
+            
+             p {
               margin-top: 15px;
                 padding: 0 20px;
                 font-size: 18px;
                 text-align:center;
             }
 
-            a {
+             a {
               text-decoration: none;
               color: $colorSecondary;
               margin-top: 15px;
@@ -98,14 +96,14 @@ main{
               
             }
             
-            img {
+             img {
               max-width: 100%;
               width: 420px; 
               height: 360px;
             }
 
            }
-          }
+        }
         }
         
           

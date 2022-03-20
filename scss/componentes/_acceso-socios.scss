@@ -47,23 +47,20 @@
     transition: transform 0.5s ease;
     overflow: hidden;
     cursor: pointer;
-    margin: 20px;
-    width: 285px; 
+    width: 680px; 
+    padding-right: 30px;
     height: auto;
+    
   }
   
   .zoom-lyon:hover {
     transform: scale(1.2);
   }
   
- .ad-publi {
-    a {
-      width: 215px;
-      height: auto;
-    }
- }
+ 
 
   .ad-registro {
-      font-size: 38px;
+      font-size: 34px;
+      text-align: center;
       
   }
