@@ -31,41 +31,50 @@
 
 
     &_tienda {
+      align-self:center;
+      
       a {
       font-size: 14px;
+      
     }
     }
   }
 
   
 
-  .section-partidos {
-    margin: 0 auto;
-    width: 80%;
-  }
-
-  .ultimo {
-    h3 {
-      font-size: 24px;
-    }
-
-    h4 {
-      font-size: 20px;
-    }
-  }
-
-  .proximo {
-    h3 {
-      font-size: 24px;
-    }
-    h4 {
-      font-size: 20px;
-    }
-  }
+  
 
 
   main {
-    section {
+    
+
+      .partidos {
+        align-content: center;
+        padding: 15px;
+        margin: 0 auto;
+        color: $colorLight;
+      
+      
+        h3 {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+        }
+        
+      }
+
+      .plantel { 
+        img {
+        width:100%;
+      }
+      section {
+
+        
+        
       h2 {
         margin: 35px 15px;
         font-size: 54px;
@@ -75,11 +84,9 @@
           padding: 15px 0;
 
           div {
-            margin: 0;
-            height: 130%;
-
             p {
-              font-size: 18px;
+              font-size: 16px;
+              
             }
           }
         }
@@ -277,34 +284,50 @@
 
   
 
-  .section-partidos {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 30px;
-  }
 
-  .ultimo {
-    h3 {
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
-    }
-  }
-
-  .proximo {
-    h3 {
-      font-size: 16px;
-    }
-
-    h4 {
-      font-size: 12px;
-    }
-  }
 
   main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .partidos {
+      
+      h3 {
+        font-size: 14px;
+      }
+
+      h4 {
+        font-size: 12px;
+      }
+      &_ultimo {
+        display: none;
+      }
+      &_fecha {
+        font-size: 12px;
+        img {
+          width: 30px;
+        }
+      }
+    }
+
+    .plantel {
+      img {
+        width: 100%;
+      }
+    }
+    
     section {
+
+      .notas {
+        grid-template-columns: 1fr;
+        max-width: 75%;
+    
+        &_infantil,
+        &_nacional,
+        &_local {
+          font-size: 12px;
+        }
+      }
       h2 {
         font-size: 36px;
         margin: 28px 15px;
@@ -319,6 +342,9 @@
             p {
               font-size: 12px;
             }
+            a {
+              font-size: 12px;
+            }
             img {
               max-width: 100%;
               width: 380px;
@@ -330,16 +356,7 @@
     }
   }
 
-  .notas {
-    grid-template-columns: 1fr;
-    max-width: 75%;
-
-    &_infantil,
-    &_nacional,
-    &_local {
-      font-size: 12px;
-    }
-  }
+  
 
   .table-title {
     font-size: 24px;
