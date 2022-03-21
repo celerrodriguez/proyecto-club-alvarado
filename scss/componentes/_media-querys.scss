@@ -26,16 +26,12 @@
 
     &_logo {
       width: 120px;
+      height: 120px;
     }
 
-
-
     &_tienda {
-      align-self:center;
-      
       a {
       font-size: 14px;
-      
     }
     }
   }
@@ -94,111 +90,121 @@
     }
   }
 
-  .table-title {
+  .table {
+    
+    &-title {
     font-size: 38px;
-  }
+    }
 
-  .table-direction {
-    margin-top: 15px;
-  }
+    &-direction {
+      margin-top: 15px;
+    }
 
-  .table_heading {
-    font-size: 16px;
-  }
+    &_heading {
+      font-size: 16px;
+    }
 
-  .table--posiciones {
-    grid-template-columns: repeat(7, 1fr);
-    gap: 3px;
-    margin: 0 auto;
-  }
-  .table-responsive {
-    display: none;
+    &--posiciones {
+      grid-template-columns: repeat(7, 1fr);
+      gap: 3px;
+      margin: 0 auto;
+    }
+
+    &-responsive {
+      display: none;
+    }
   }
 
   footer {
     grid-template-columns: repeat(2, 1fr);
 
-    section h4 {
-      font-size: 24px;
-      padding-top: 15px;
+    .footer__datos {
+      margin: 0 auto;
+      padding-left: 30px;
+      
+      div 
+        h4 {
+          font-size: 18px;
+          padding-top: 15px;
+          }
+  
+        p {
+          font-size: 14px;
+          }
+  
+        .club {
+          width: 50px;
+          height: auto;
+          }
+        
+        .direccion {
+          width: 22px;
+          height: 22px;
+          }
+        
+        .telefono {
+          width: 22px;
+          height: 22px;
+          }
+        
+        .mail  {
+          width: 15px;
+          height: 15px;
+          }
+    }  
+
+    .footer__copyright {
+      order: 1;
+      margin: 0 auto;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-top: 30px;
+  
+      p {
+        font-size: 14px;
+      }
     }
-  }
 
-  .club {
-    width: 50px;
-    height: auto;
-  }
-
-  .direccion {
-    img {
-      width: 22px;
-      height: 22px;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
-
-  .telefono {
-    img {
-      width: 22px;
-      height: 22px;
-    }
-    p {
-      font-size: 16px;
-    }
-  }
-
-  .mail img {
-    width: 15px;
-    height: 15px;
-  }
-
-  .email {
-    font-size: 16px;
-  }
-
-  .copyright {
-    order: 1;
-    margin: 0 auto;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-    p {
-      font-size: 14px;
-    }
-  }
-
-  .ubicacion {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-
-  .footer-redes a img {
-    width: 50%;
-  }
-
-  .footer-sponsor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .lyon {
-      width: 38%;
+    .footer__redes {
+      margin: auto 10px;
+      
+      a {
+        img {
+      width: 30%;
       height: auto;
-      padding-bottom: 15px;
+      margin-top: 30px;
+        }
+      }
     }
+  
 
-    .weber {
-      width: 33%;
-      height: auto;
-      padding-bottom: 15px;
-    }
-    .sierra {
-      width: 28%;
-      height: auto;
+    .footer__sponsor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .lyon {
+        width: 35%;
+        height: auto;
+        padding-bottom: 15px;
+      }
+  
+      .weber {
+        width: 35%;
+        height: auto;
+        padding-bottom: 15px;
+        padding-left: 60px;
+      }
+      .sierra {
+        width: 30%;
+        height: auto;
+        padding-left: 60px;
+      }
     }
   }
+
+  
+  
 
   /* Acceso socios */
 
@@ -275,6 +281,7 @@
     }
     &_tienda {
       flex-wrap: wrap;
+      align-self: center;
   
       a {
         font-size: 10px;
@@ -359,112 +366,117 @@
 
   
 
-  .table-title {
-    font-size: 24px;
-    text-align: center;
-    margin: 0 auto;
+  .table {
+
+    &-title {
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &_heading {
+      font-size: 14px;
+    }
+
+    &-direction {
+      margin-top: 30px;
+    }
+
+    &--posiciones {
+      grid-template-columns: repeat(7, 1fr);
+      font-size: 12px;
+    }
+
+    &_pos {
+      font-size: 12px;
+    }
   }
 
-  .table_heading {
-    font-size: 14px;
-  }
 
-  .table-direction {
-    margin-top: 30px;
-  }
-
-  .table--posiciones {
-    grid-template-columns: repeat(7, 1fr);
-    font-size: 12px;
-  }
-  .table_pos {
-    font-size: 12px;
-  }
 
   footer {
     display: flex;
     flex-direction: column;
 
-    section {
-      h4 {
-        font-size: 16px;
+  .footer__datos {
+      div {
+        h4 {
+        font-size: 14px;
         padding-top: 8px;
-      }
-      div img {
-        width: 15px;
-        height: 15px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .club {
+          width: 32px;
+          height: 32px;
+        }
+      
+        .direccion {
+          width: 20px;
+          height: 20px;
+        }
+      
+        .telefono {
+          width: 20px;
+          height: 20px;
+        }
+      
+        .mail {
+          width: 26px;
+          height: 30px;
+        }
       }
     }
-  }
 
-  .footer-datos {
-    margin: 0 auto;
-  }
-
-  .club {
-    width: 26px;
-    height: 26px;
-  }
-
-  .mail {
-    width: 26px;
-    height: 30px;
-  }
-
-  .direccion p {
-    font-size: 12px;
-  }
-
-  .telefono p {
-    font-size: 12px;
-  }
-
-  .email {
-    font-size: 12px;
-  }
-
-  .copyright {
+  .footer__copyright {
     order: 2;
     display: flex;
 
     p {
-      font-size: 10px;
+      font-size: 12px;
+      }
+    }
+
+    .footer__redes {
+      a {
+        img {
+      width: 50%;
+      height: auto;
+      margin-top: 30px;
+        }
+      }
+    }
+  
+
+    .footer__sponsor {
+      margin-top: 30px;
+  
+      .lyon {
+        width: 30%;
+        height: auto;
+        padding-bottom: 15px;
+      }
+  
+      .weber {
+        width: 30%;
+        height: auto;
+        padding-left: 10px;
+        
+      }
+      .sierra {
+        width: 25%;
+        height: auto;
+        padding-left: 10px;
+      }
     }
   }
 
-  .footer-redes {
-    display: flex;
-    margin-top: 10px;
+  
 
-    a {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-  .footer-sponsor {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    margin-top: 15px;
-
-    .lyon {
-      width: 38%;
-      height: auto;
-      padding-bottom: 15px;
-    }
-
-    .weber {
-      width: 25%;
-      height: auto;
-      padding-bottom: 15px;
-    }
-
-    .sierra {
-      width: 30%;
-      height: auto;
-    }
-  }
+  
 
   /* Acceso socios */
 
