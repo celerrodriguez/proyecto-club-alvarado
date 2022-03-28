@@ -25,8 +25,7 @@
     }
 
     &_logo {
-      width: 120px;
-      height: 120px;
+      @include sizes (120px, 120px);
     }
 
     &_tienda {
@@ -47,7 +46,7 @@
       .partidos {
         align-content: center;
         padding: 15px;
-        margin: 0 auto;
+        margin: $marginCenter;
         color: $colorLight;
       
       
@@ -107,7 +106,7 @@
     &--posiciones {
       grid-template-columns: repeat(7, 1fr);
       gap: 3px;
-      margin: 0 auto;
+      margin: $marginCenter;
     }
 
     &-responsive {
@@ -119,7 +118,7 @@
     grid-template-columns: repeat(2, 1fr);
 
     .footer__datos {
-      margin: 0 auto;
+      margin: $marginCenter;
       padding-left: 30px;
       
       div 
@@ -133,29 +132,25 @@
           }
   
         .club {
-          width: 50px;
-          height: auto;
+          @include sizes (50px, auto);
           }
         
         .direccion {
-          width: 22px;
-          height: 22px;
+          @include sizes (22px, 22px);
           }
         
         .telefono {
-          width: 22px;
-          height: 22px;
+          @include sizes (22px, 22px);
           }
         
         .mail  {
-          width: 15px;
-          height: 15px;
+          @include sizes (15px, 15px);
           }
     }  
 
     .footer__copyright {
       order: 1;
-      margin: 0 auto;
+      margin: $marginCenter;
       grid-column-start: 1;
       grid-column-end: 3;
       padding-top: 30px;
@@ -166,13 +161,11 @@
     }
 
     .footer__redes {
-      margin: auto 10px;
-      
+      margin: auto 1rem;
       a {
         img {
-      width: 30%;
-      height: auto;
-      margin-top: 30px;
+          @include sizes (45%, auto);
+          margin-top: 30px;
         }
       }
     }
@@ -180,25 +173,18 @@
 
     .footer__sponsor {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
   
       .lyon {
-        width: 35%;
-        height: auto;
-        padding-bottom: 15px;
+        @include sizes (42%, auto);
       }
   
       .weber {
-        width: 35%;
-        height: auto;
-        padding-bottom: 15px;
-        padding-left: 60px;
+        @include sizes (22%, auto);
       }
       .sierra {
-        width: 30%;
-        height: auto;
-        padding-left: 60px;
+        @include sizes (28%, auto);
       }
     }
   }
@@ -214,7 +200,7 @@
 
   .acceso-sub {
     font-size: 32px;
-    margin: 0 auto;
+    margin: $marginCenter;
   }
 
   .div-acceso {
@@ -223,14 +209,13 @@
   }
 
   .ad-registro {
-    font-size: 28px;
-    text-align: center;
+    @include parrafos (28px, center);
     color: $colorLight;
   }
 
   .ad-publi {
     max-width: 100%;
-    margin: 0 auto;
+    margin: $marginCenter;
   }
 }
 
@@ -265,19 +250,16 @@
     flex-direction: column;
 
     &_club {
-      font-size: 28px;
-      text-align: center;
+      @include parrafos (28px, center);
     }
 
     &_sitio {
-      font-size: 20px;
-      text-align: center;
+      @include parrafos (20px, center);
       margin-bottom: 10px;
     }
 
     &_logo {
-      width: 80px;
-      height: 80px;
+      @include sizes (80px, 80px);
     }
     &_tienda {
       flex-wrap: wrap;
@@ -313,7 +295,7 @@
       &_fecha {
         font-size: 12px;
         img {
-          width: 30px;
+          @include sizes (30px, 30px);
         }
       }
     }
@@ -342,7 +324,7 @@
       }
       div {
         article {
-          margin: 0 auto;
+          margin: $marginCenter;
           width: 220px;
           margin-bottom: 15px;
 
@@ -355,8 +337,7 @@
             }
             img {
               max-width: 100%;
-              width: 380px;
-              height: 180px;
+              @include sizes (380px, 180px);
             }
           }
         }
@@ -370,16 +351,10 @@
 
     &-title {
       font-size: 18px;
-      text-align: center;
-      margin: 0 auto;
     }
 
     &_heading {
       font-size: 14px;
-    }
-
-    &-direction {
-      margin-top: 30px;
     }
 
     &--posiciones {
@@ -410,23 +385,19 @@
         }
 
         .club {
-          width: 32px;
-          height: 32px;
+          @include sizes (32px, 32px);
         }
       
         .direccion {
-          width: 20px;
-          height: 20px;
+          @include sizes (20px, 20px);
         }
       
         .telefono {
-          width: 20px;
-          height: 20px;
+          @include sizes (20px, 20px);
         }
       
         .mail {
-          width: 26px;
-          height: 30px;
+          @include sizes (26px, 26px);
         }
       }
     }
@@ -443,32 +414,29 @@
     .footer__redes {
       a {
         img {
-      width: 50%;
-      height: auto;
-      margin-top: 30px;
+          @include sizes (50%, auto);
+          margin-top: 30px;
         }
       }
     }
-  
-
     .footer__sponsor {
+      flex-direction: column;
       margin-top: 30px;
+      align-items: center;
   
       .lyon {
-        width: 30%;
-        height: auto;
+        @include sizes (30%, auto);
         padding-bottom: 15px;
       }
   
       .weber {
-        width: 30%;
-        height: auto;
+        @include sizes (30%, auto);
         padding-left: 10px;
+        padding-bottom: 15px;
         
       }
       .sierra {
-        width: 25%;
-        height: auto;
+        @include sizes (28%, auto);
         padding-left: 10px;
       }
     }
@@ -485,26 +453,25 @@
   }
 
   .cont-acceso {
-    margin: 0 auto;
+    margin: $marginCenter;
   }
   .acceso-title {
     font-size: 32px;
-    margin: 0 auto;
+    margin: $marginCenter;
   }
 
   .acceso-sub {
     font-size: 28px;
-    margin: 0 auto;
+    margin: $marginCenter;
   }
 
   .ad-registro {
-    font-size: 18px;
-    text-align: center;
+    @include parrafos (18px, center);
     margin-top: 15px;
   }
 
   .ad-publi {
     max-width: 75%;
-    margin: 0 auto;
+    margin: $marginCenter;
   }
 }

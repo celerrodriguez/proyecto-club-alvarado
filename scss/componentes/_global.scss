@@ -9,7 +9,12 @@ body {
     font-family: "Source Sans Pro", sans-serif;
   }
 
- 
+  
+.hoverLinks {
+  a:hover {
+    color: $colorLightD;
+  }
+ }
 
 
   @mixin parrafos ($size, $alineacion){
@@ -17,6 +22,10 @@ body {
       text-align: $alineacion;
   }
 
+  @mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
 
 
 

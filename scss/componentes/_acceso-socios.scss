@@ -1,7 +1,4 @@
-.main-order {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.main {
 
     form {
       label {
@@ -9,6 +6,7 @@
       }
     }
   }
+  
   
   .acceso-socios {
     padding: 30px auto;
@@ -47,10 +45,8 @@
     transition: transform 0.5s ease;
     overflow: hidden;
     cursor: pointer;
-    width: 680px; 
+    @include sizes (680px, auto);
     padding-right: 30px;
-    height: auto;
-    
   }
   
   .zoom-lyon:hover {
@@ -60,7 +56,5 @@
  
 
   .ad-registro {
-      font-size: 34px;
-      text-align: center;
-      
+    @include parrafos (34px, center);
   }

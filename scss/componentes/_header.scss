@@ -2,82 +2,88 @@ header {
     height: 250%;
     background-color: #ddd;    
     padding: 1rem;
-  }
 
-.header-top {
-  background-color: $colorBlueD;
-  display: flex;
-  justify-content: space-between;
-  p {
-    font-size: 20px;
-    
-    }
-  ul {
-     list-style: none;
-     display: flex;
-     align-items: center;
-  
-     li {
-      margin-left: 1rem;
-      border-radius:20px;
-      padding: 4px 10px;
-      background-color: rgba(4, 4, 47, 0.8);
-      font-weight: bold;
-      }
-    }
-
-     a {
-      display: inline-block;
-      color:$colorLight;
-      text-decoration: none;
-}
-}
-
-.hola {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    
-    &_club {
-        font-size: 90px;
-        color: $colorSecondary;
-    }
-    &_sitio {
-        font-size: 45px;
-        color:$colorSecondary;
-      }
-    &_logo {
-        flex-grow: 0;
-      }
-    &_flex {
-        width: 100%;
-        padding: 0rem;
-        flex-grow: 2;
-        justify-items: flex-start;
-      }
-      
-    &_tienda {
-      align-self: flex-end;
-      justify-items: flex-end;
-      
-      a {
-          display: inline-block;
-          font-size: 22px;
-          background: $colorBlueD;
-          color: $colorLight;
-          text-align: center;
-          padding: 5px 15px;
-          border-radius: 10px;
-          text-decoration: none;
+    .header-top {
+      background-color: $colorBlueD;
+      display: flex;
+      justify-content: space-between;
+      p {
+        font-size: 20px;
+        
         }
+      ul {
+         list-style: none;
+         display: flex;
+         align-items: center;
+      
+         li {
+          margin-left: 1rem;
+          border-radius:20px;
+          padding: 4px 10px;
+          background-color: rgba(4, 4, 47, 0.8);
+          font-weight: bold;
+          }
+        }
+    
+         a {
+          display: inline-block;
+          color:$colorLight;
+          text-decoration: none;
+          }
+    
+          @extend .hoverLinks
+    }
+    
+    .hola {
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        
+        &_club {
+            font-size: 90px;
+            color: $colorSecondary;
+        }
+        &_sitio {
+            font-size: 45px;
+            color:$colorSecondary;
+          }
+        &_logo {
+            flex-grow: 0;
+            @include sizes (150px, 150px);
+          }
+        &_flex {
+            width: 100%;
+            flex-grow: 2;
+            justify-items: flex-start;
+          }
+          
+        &_tienda {
+          align-self: flex-end;
+          justify-items: flex-end;
+          
+          a {
+              display: inline-block;
+              font-size: 22px;
+              background: $colorBlueD;
+              color: $colorLight;
+              text-align: center;
+              padding: 5px 15px;
+              border-radius: 10px;
+              text-decoration: none;
+            }
+        }
+      }
+
+    .drop {
+      color: $colorPrimary;
+      font-weight: bold;
+      padding: 0;
     }
   }
 
 
-  .drop {
-    color: $colorPrimary;
-    font-weight: bold;
-    padding: 0;
-  }
+
+
+  
 
