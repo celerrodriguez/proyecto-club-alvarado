@@ -41,16 +41,17 @@ header {
         padding: 15px;
         
         &_club {
-            font-size: 90px;
+            font-size: 100px;
             color: $colorSecondary;
         }
         &_sitio {
-            font-size: 45px;
+            font-size: 65px;
             color:$colorSecondary;
           }
         &_logo {
-            flex-grow: 0;
+            margin: auto 0;
             @include sizes (150px, 150px);
+          
           }
         &_flex {
             width: 100%;
