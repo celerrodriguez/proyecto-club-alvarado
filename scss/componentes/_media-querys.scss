@@ -399,10 +399,6 @@
 
   /* Acceso socios */
 
-  .main-order {
-    flex-direction: column;
-  }
-
   .cont-acceso {
     margin: $marginCenter;
   }
@@ -458,6 +454,11 @@
   }
 
    /* Acceso socios */
+
+   .cont-acceso {
+     padding-left: 0;
+     padding-right: 0;
+   }
 
   .acceso-socios {
     p {
