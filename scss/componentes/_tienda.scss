@@ -1,0 +1,18 @@
+h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    color: $colorSecondary;
+}
+
+
+p{
+    font-size: 28px;
+    padding: 1rem 3rem;
+    color: $colorLight;
+
+    .precio {
+        margin-top: 10px;
+        font-weight: bold;
+        
+    }
+}
