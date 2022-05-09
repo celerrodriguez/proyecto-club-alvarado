@@ -1,0 +1,883 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Dongle", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.hoverLinks a:hover, header .header-top a:hover, main section div article div a:hover, main div .table--mas p a:hover {
+  color: #ddd;
+}
+
+.notas_nacional {
+  background-color: #b8a5d6;
+  padding: 8px 10px;
+  font-size: 18px;
+  display: inline-block;
+  color: black;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.notas_local {
+  background-color: #cfb7ab;
+  padding: 8px 10px;
+  font-size: 18px;
+  display: inline-block;
+  color: black;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.notas_infantil {
+  background-color: #9fdff3;
+  padding: 8px 10px;
+  font-size: 18px;
+  display: inline-block;
+  color: black;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.main form label {
+  width: 300px;
+}
+
+.acceso-socios {
+  padding: 30px auto;
+}
+
+.acceso-title {
+  font-size: 50px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#7c9cb0));
+  background-image: linear-gradient(#fff, #7c9cb0);
+  color: #04042f;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.acceso-sub {
+  font-size: 58px;
+  text-align: center;
+  padding: 10px;
+  max-width: 1500px;
+  padding-left: 35px;
+  color: #fff;
+}
+
+.label-recordar {
+  color: #ddd;
+}
+
+.bg-card {
+  background-color: #7c9cb0;
+  color: #fff;
+}
+
+.zoom-lyon {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+  width: 680px;
+  height: auto;
+  padding-right: 30px;
+}
+
+.zoom-lyon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.ad-registro {
+  font-size: 34px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #053159;
+}
+
+p {
+  font-size: 28px;
+  padding: 1rem 3rem;
+  color: #fff;
+}
+
+p .precio {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+header {
+  height: 250%;
+  background-color: #ddd;
+  padding: 1rem;
+}
+
+header .header-top {
+  background-color: #04042f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header-top p {
+  font-size: 20px;
+}
+
+header .header-top ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-top ul li {
+  margin-left: 1rem;
+  border-radius: 20px;
+  padding: 4px 10px;
+  background-color: rgba(4, 4, 47, 0.8);
+  font-weight: bold;
+}
+
+header .header-top a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .hola {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px;
+}
+
+header .hola_club {
+  font-size: 100px;
+  color: #053159;
+}
+
+header .hola_sitio {
+  font-size: 65px;
+  color: #053159;
+}
+
+header .hola_logo {
+  margin: auto 0;
+  width: 150px;
+  height: 150px;
+}
+
+header .hola_flex {
+  width: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  justify-items: flex-start;
+}
+
+header .hola_tienda {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-items: flex-end;
+}
+
+header .hola_tienda a {
+  display: inline-block;
+  font-size: 22px;
+  background: #04042f;
+  color: #fff;
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+header .drop {
+  color: #040431;
+  font-weight: bold;
+  padding: 0;
+}
+
+main {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#04042f), color-stop(10%, #ddd), to(#04042f));
+  background-image: linear-gradient(#04042f, #ddd 10%, #04042f);
+  background-position: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main .partidos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #04042f;
+}
+
+main .partidos_fecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+main .partidos_fecha p {
+  font-weight: bolder;
+}
+
+main .partidos h3 {
+  font-weight: bolder;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+main .partidos h4 {
+  text-align: center;
+}
+
+main .plantel img {
+  width: 100%;
+}
+
+main section h2 {
+  font-size: 75px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  padding: 20px;
+  color: #053159;
+}
+
+main section .notas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  max-width: 75%;
+}
+
+main section div article {
+  padding-top: 15px;
+  max-width: 80%;
+  max-height: 100%;
+  background-color: #7c9cb0;
+  margin: 25px;
+  border-style: 15px solid;
+  border-radius: 20px;
+}
+
+main section div article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section div article div p {
+  margin-top: 15px;
+  padding: 0 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+main section div article div a {
+  text-decoration: none;
+  color: #053159;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+main section div article div img {
+  max-width: 100%;
+  width: 420px;
+  height: 360px;
+}
+
+main div h3 {
+  font-size: 58px;
+  text-align: center;
+  color: #ddd;
+  margin: 40px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+main div .table--size {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+main div .table--alva {
+  background-color: #053159;
+}
+
+main div .table--mas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: italic;
+  cursor: pointer;
+}
+
+main div .table--mas p a {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #acbcc7;
+  color: #fff;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+footer .footer__datos {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 6px;
+  margin-right: 8px;
+}
+
+footer .footer__datos div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2px;
+}
+
+footer .footer__datos div h4 {
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+footer .footer__datos div p {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+footer .footer__datos div .club {
+  padding-right: 5px;
+  width: 54px;
+  height: 54px;
+}
+
+footer .footer__datos div .direccion {
+  margin-top: 8px;
+  margin-left: 6px;
+  width: 32px;
+  height: 32px;
+}
+
+footer .footer__datos div .telefono {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 28px;
+  height: 28px;
+}
+
+footer .footer__datos div .mail {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 28px;
+  height: 28px;
+}
+
+footer .footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto 90px;
+}
+
+footer .footer__sponsor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 40px;
+  justify-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  header .header-top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-top p {
+    font-size: 16px;
+  }
+  header .header-top ul li {
+    font-size: 13px;
+    padding: 5px;
+  }
+  header .hola {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hola_club {
+    font-size: 68px;
+    text-align: center;
+  }
+  header .hola_sitio {
+    font-size: 48px;
+    text-align: center;
+  }
+  header .hola_logo {
+    width: 120px;
+    height: 120px;
+  }
+  header .hola_tienda a {
+    font-size: 14px;
+  }
+  main .partidos {
+    padding: 15px;
+    margin: 0 auto;
+  }
+  main .partidos h3 {
+    font-size: 18px;
+  }
+  main .partidos h4 {
+    font-size: 16px;
+  }
+  main .plantel img {
+    width: 100%;
+  }
+  main section h2 {
+    margin: 35px 15px;
+    font-size: 64px;
+  }
+  main section div article {
+    padding: 15px 0;
+  }
+  main section div article div p {
+    font-size: 16px;
+  }
+  main .table--size {
+    width: 75%;
+  }
+  footer {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  footer .footer__datos {
+    margin: 0 auto;
+    padding-left: 30px;
+  }
+  footer .footer__datos div h4 {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+  footer .footer__datos p {
+    font-size: 14px;
+  }
+  footer .footer__datos .club {
+    width: 50px;
+    height: auto;
+  }
+  footer .footer__datos .direccion {
+    width: 22px;
+    height: 22px;
+  }
+  footer .footer__datos .telefono {
+    width: 22px;
+    height: 22px;
+  }
+  footer .footer__datos .mail {
+    width: 15px;
+    height: 15px;
+  }
+  footer .footer__copyright {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 auto;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 30px;
+  }
+  footer .footer__copyright p {
+    font-size: 14px;
+  }
+  footer .footer__redes {
+    margin: auto 1rem;
+  }
+  footer .footer__redes a img {
+    width: 45%;
+    height: auto;
+    margin-top: 30px;
+  }
+  footer .footer__sponsor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  footer .footer__sponsor .lyon {
+    width: 42%;
+    height: auto;
+  }
+  footer .footer__sponsor .weber {
+    width: 22%;
+    height: auto;
+  }
+  footer .footer__sponsor .sierra {
+    width: 28%;
+    height: auto;
+  }
+  /* Acceso socios */
+  .acceso-title {
+    font-size: 34px;
+  }
+  .acceso-sub {
+    font-size: 32px;
+    margin: 0 auto;
+  }
+  .div-acceso {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .ad-registro {
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+  }
+  .ad-publi {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 2px;
+  }
+  header .header-top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-top p {
+    display: none;
+  }
+  header .header-top ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .header-top ul li {
+    font-size: 12px;
+    margin: auto;
+    padding: 3px 5px;
+  }
+  header .header-top form {
+    display: none;
+  }
+  header .hola_club {
+    font-size: 28px;
+    text-align: center;
+  }
+  header .hola_sitio {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  header .hola_logo {
+    width: 80px;
+    height: 80px;
+  }
+  header .hola_tienda {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header .hola_tienda a {
+    font-size: 10px;
+    padding: 4px 5px;
+  }
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main .partidos h3 {
+    font-size: 14px;
+  }
+  main .partidos h4 {
+    font-size: 12px;
+  }
+  main .partidos_ultimo {
+    display: none;
+  }
+  main .partidos_fecha {
+    font-size: 12px;
+  }
+  main .partidos_fecha img {
+    width: 30px;
+    height: 30px;
+  }
+  main .plantel img {
+    width: 100%;
+  }
+  main section .notas {
+    max-width: 75%;
+  }
+  main section .notas_infantil, main section .notas_nacional, main section .notas_local {
+    font-size: 12px;
+  }
+  main section h2 {
+    font-size: 48px;
+    margin: 28px 15px;
+  }
+  main section div article {
+    margin: 0 auto;
+    width: 220px;
+    margin-bottom: 15px;
+  }
+  main section div article div p {
+    font-size: 12px;
+  }
+  main section div article div a {
+    font-size: 12px;
+  }
+  main section div article div img {
+    max-width: 100%;
+    width: 380px;
+    height: 180px;
+  }
+  main .table--size {
+    width: 75%;
+  }
+  main .table--sm {
+    display: none;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer__datos div h4 {
+    font-size: 14px;
+    padding-top: 8px;
+  }
+  footer .footer__datos div p {
+    font-size: 14px;
+  }
+  footer .footer__datos div .club {
+    width: 32px;
+    height: 32px;
+  }
+  footer .footer__datos div .direccion {
+    width: 20px;
+    height: 20px;
+  }
+  footer .footer__datos div .telefono {
+    width: 20px;
+    height: 20px;
+  }
+  footer .footer__datos div .mail {
+    width: 26px;
+    height: 26px;
+  }
+  footer .footer__copyright {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .footer__copyright p {
+    font-size: 12px;
+  }
+  footer .footer__redes a img {
+    width: 30%;
+    height: auto;
+    margin-top: 30px;
+  }
+  footer .footer__sponsor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer__sponsor .lyon {
+    width: 30%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  footer .footer__sponsor .weber {
+    width: 30%;
+    height: auto;
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+  footer .footer__sponsor .sierra {
+    width: 28%;
+    height: auto;
+    padding-left: 10px;
+  }
+  /* Acceso socios */
+  .cont-acceso {
+    margin: 0 auto;
+  }
+  .acceso-title {
+    font-size: 32px;
+    margin: 0 auto;
+  }
+  .acceso-sub {
+    font-size: 28px;
+    margin: 0 auto;
+  }
+  .ad-registro {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .ad-publi {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#04042f), color-stop(48%, #ddd), to(#04042f));
+    background-image: linear-gradient(#04042f, #ddd 48%, #04042f);
+  }
+  main section .notas {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main section h2 {
+    color: #ddd;
+    font-size: 36px;
+  }
+  .table--xsm {
+    display: none;
+  }
+  footer .footer__redes a img {
+    width: 40%;
+    height: auto;
+  }
+  /* Acceso socios */
+  .cont-acceso {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .acceso-socios p {
+    color: #ddd;
+  }
+}
+/*# sourceMappingURL=style.css.map */
