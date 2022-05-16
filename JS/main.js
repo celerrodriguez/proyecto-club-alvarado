@@ -223,6 +223,8 @@ const nov = [
 const contenedorNovedades = document.querySelector(".contenedor-novedades");
 const contenedorCarrito = document.querySelector(".contenedor-carrito");
 const carrito = [];
+const total = 0
+
 
 document.addEventListener('DOMContentLoaded', () => {
     mostrarNovedades();
@@ -266,6 +268,8 @@ function agregarAlCarrito(name) {
 }
 
 function mostrarCarrito(mCarrito){
+contenedorCarrito.innerHTML = "";
+
     mCarrito.forEach(mostrarC => {
         const divNovedades = document.createElement('div');
         divNovedades.classList.add('card');
@@ -281,16 +285,32 @@ function mostrarCarrito(mCarrito){
         precioNovedades.classList.add('precio-novedades');
         precioNovedades.textContent = mostrarC.precio;
 
+        const totalNovedades = document.createElement('h4');
+        totalNovedades.classList.add('total-novedades');
+        totalNovedades.textContent = compra ();
+        
+
         divNovedades.appendChild(precioNovedades)
         divNovedades.appendChild(tituloNovedades)
         divNovedades.appendChild(div2Novedades)
+        divNovedades.appendChild(totalNovedades)
         
 
         contenedorCarrito.appendChild(divNovedades)
 
     });
-    for (const novedades of nov){
-
-        
-    }
+    
 }
+ function compra (){
+     total => total += mostrarC.precio
+ }
+
+
+ //Usuario y contraseña
+const form = document.querySelector('#form')
+ let email = [];
+
+ form.addEventListener('')
+ document.addEventListener("DOMContentLoaded", () => {
+     email = localStorage.getItem('email') || [];
+ })

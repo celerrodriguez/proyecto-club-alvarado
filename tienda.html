@@ -24,7 +24,7 @@
                 <div class="d-flex align-items-center">
                 <ul class="m-2">
                     <li><a href="./tienda.html"> Inicio tienda</a></li>
-                    <li><a href="#"> Acceso usuarios</a></li>
+                    <li><a href="#"> Iniciar sesión</a></li>
                     <li><a href="#">Registrarse</a></li>
                     <li><a href="#">Preguntas frecuentes</a></li>
                     <li><a href="#"> Contáctenos</a></li>
@@ -87,6 +87,34 @@
         </header>
 
         <main>
+          <div class="m-3 d-flex contenedor-datos">
+            <div id="form" class="row g-4 align-items-center m-1">
+              <div class="col-auto">
+                <label for="email" class="col-form-label">E-mail</label>
+              </div>
+              <div class="col-auto">
+                <input type="email" id="email" class="form-control" aria-describedby="emailHelp">
+              </div>
+              
+            </div>
+
+            <div class="row g-2 align-items-center mt-2">
+              <div class="col-auto">
+                <label for="password" class="col-form-label m-1">Password</label>
+              </div>
+              <div class="col-auto">
+                <input type="password" id="password" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+            <div class="m-3">
+              <button class="btn btn-secondary">Ingresar</button>
+            </div>
+            
+          </div>
+
+
+
+
           <div class="container-fluid contenedor">
           <h2 class="m-4">Novedades</h2>
           <div class=" m-4 d-flex .img-fluid contenedor-novedades">
@@ -96,6 +124,8 @@
       
       <div class=".img-fluid contenedor-carrito">
         <h3>Tu carrito</h3>
+
+        <h3 id="totalCarrito" class="total">TOTAL:</h3>
       </div>
     </div>
       
