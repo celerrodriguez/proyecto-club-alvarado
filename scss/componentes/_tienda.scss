@@ -1,0 +1,89 @@
+
+.contenedor {
+    background-color: $colorSecondary;
+
+    h2 {
+    font-size: 80px;
+    font-weight: bolder;
+    color: $colorLightD;
+    margin: 2rem 3rem;
+}
+
+   .contenedor-novedades {
+       margin-top: 1rem;
+       display: grid;
+       gap: 1rem;
+       grid-template-columns: repeat(3,1fr);
+       max-width: 75%;
+       
+
+       .card {
+           margin-bottom: 2rem;
+           text-align: center;
+           border: 1px solid $colorLightD;
+           border-radius: 10px;
+           color: $colorLightD;
+           overflow: hidden;
+           max-width: 700px;
+           max-height: 420px;
+       }
+
+       .titulo-novedades {
+           font-size: 28px;
+           color: $colorPrimary;
+       }
+
+       .img-novedades {
+           height: 280px;
+           object-fit: cover;
+           object-position: center;
+       }
+
+       .btn-alcarrito {
+          margin: 0 auto;
+          margin-bottom: 1rem;
+           color: $colorLight;
+           background-color: $colorBlueD;
+           padding: 0.5rem 1rem;
+           border-radius: 10px;
+           outline: none;
+           border: none;
+           cursor: pointer;
+       }
+
+       .btn-alcarrito:hover {
+           color: $colorLightD;
+       }
+   }
+   
+   .contenedor-carrito {
+       display: flex;
+       justify-content: flex-end;
+       align-content: flex-end;
+       flex-direction: column;
+       flex-wrap: nowrap;
+       background-color: $colorLightD;
+       max-width: 30%;
+
+       h3 {
+        font-size: 30px;
+        font-weight: bolder;
+        color: $colorPrimary;
+        text-transform:capitalize;
+        text-align: center;
+    }
+    .carrito {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-end;
+
+        .precio-novedades {
+            margin-left: 2rem;
+        }
+    }
+    .total {
+        text-align: left;
+        font-weight: bold;
+    }
+   }
+}
