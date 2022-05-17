@@ -177,3 +177,8 @@ function seleccionarTarjeta(t){
 
     //Deberias tener un array de objetos. Y trabajar con un forEach, Dentro de tu array de objetos deberías tener toda la información. Codigo, descripción, precio, etc
 
+    let productosElegidos = []
+
+    document.addEventListener("DOMContentLoaded", () => {
+        productosElegidos = localStorage.getItem('productosElegidos') || [];
+    })

@@ -220,6 +220,12 @@ const nov = [
 
 ]
 
+const strJSOn = JSON.stringify(nov)
+localStorage.setItem("producto", strJSOn)
+
+// const contCarrito = JSON.stringify(n)
+// localStorage.setItem("producto", contCarrito)
+
 const contenedorNovedades = document.querySelector(".contenedor-novedades");
 const contenedorCarrito = document.querySelector(".contenedor-carrito");
 const carrito = [];
@@ -306,11 +312,7 @@ contenedorCarrito.innerHTML = "";
  }
 
 
- //Usuario y contraseña
-const form = document.querySelector('#form')
- let email = [];
 
- form.addEventListener('')
- document.addEventListener("DOMContentLoaded", () => {
-     email = localStorage.getItem('email') || [];
- })
+//Usuario y contraseña
+// const strJSOn = JSON.stringify(nov)
+// localStorage.setItem("producto", strJSOn)
