@@ -9,7 +9,7 @@
     margin: 2rem 3rem;
 }
 
-   .contenedor-novedades {
+   .contenedor-producto {
        margin-top: 1rem;
        display: grid;
        gap: 1rem;
@@ -28,18 +28,18 @@
            max-height: 420px;
        }
 
-       .titulo-novedades {
+       .titulo-producto {
            font-size: 28px;
            color: $colorPrimary;
        }
 
-       .img-novedades {
+       .img-producto {
            height: 280px;
            object-fit: cover;
            object-position: center;
        }
 
-       .btn-alcarrito {
+       .button {
           margin: 0 auto;
           margin-bottom: 1rem;
            color: $colorLight;
@@ -65,6 +65,21 @@
        background-color: $colorLightD;
        max-width: 30%;
 
+       .table__producto {
+           display: flex;
+       }
+       .table__cantidad > input {
+           width: 40px;
+           border: none;
+           outline: 0;
+           font-size: 16px;
+           font-weight: 700;
+           margin-right: 30px;
+           margin-bottom: 20px;
+       }
+
+
+
        h3 {
         font-size: 30px;
         font-weight: bolder;
@@ -77,7 +92,7 @@
         flex-flow: row-reverse nowrap;
         justify-content: flex-end;
 
-        .precio-novedades {
+        .precio-producto {
             margin-left: 2rem;
         }
     }

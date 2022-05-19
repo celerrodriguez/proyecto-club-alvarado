@@ -182,3 +182,73 @@ function seleccionarTarjeta(t){
     document.addEventListener("DOMContentLoaded", () => {
         productosElegidos = localStorage.getItem('productosElegidos') || [];
     })
+
+    //TODO
+
+    function agregarAlCarrito (add) {
+
+        const itemAdd = productos.find( producto => producto.nombre === add);
+    
+        // for (let i=0; i<carrito.length; i+=1) {
+        //     if(carrito[i].nombre, trim() === add.nombre.trim()) {
+        //         carrito[i].cantidad +=1;
+        //         const inputValue = itemAdd[i]
+        //         inputValue.valie +=1;
+        //         return null;
+        //     }
+        // }
+        carrito.push(itemAdd);
+        mostrarCarrito(carrito);
+    }
+    
+    function mostrarCarrito(verCarrito){
+    
+        contenedorCarrito.innerHTML = "";
+    
+        verCarrito.forEach(items => {
+            
+            const divProducto =document.createElement('div');
+            divProducto.classList.add('card');
+    
+            const trProducto =document.createElement('tr');
+            divProducto.classList.add('carrito');
+    
+            const idProducto =document.createElement('th');
+            idProducto.classList.add('titulo-producto');
+            idProducto.textContent = items.id;
+    
+            const tituloProducto =document.createElement('td');
+            tituloProducto.classList.add('titulo-producto');
+            tituloProducto.textContent = items.nombre;
+    
+            const precioProducto = document.createElement('p');
+            precioProducto.classList.add('precio-producto');
+            precioProducto.textContent = items.precio;
+    
+            const cantidadProducto =document.createElement('td');
+    
+            const nroProducto =document.createElement('input');
+            nroProducto.classList.add('input-producto');
+    
+            const btnnroProducto =document.createElement('btn');
+            btnnroProducto.classList.add('btn-comprar');
+            btnnroProducto.onclick = () => {
+                comprar(pago)
+            }
+    
+            divProducto.appendChild(trProducto)
+            divProducto.appendChild(idProducto)
+            divProducto.appendChild(tituloProducto)
+            divProducto.appendChild(precProducto)
+            divProducto.appendChild(precioProducto)
+            divProducto.appendChild(cantidadProducto)
+            divProducto.appendChild(nroProducto)
+            divProducto.appendChild(btnnroProducto)
+            
+    
+            contenedorCarrito.appendChild(divProducto)
+    
+    
+    
+        });
+    }

@@ -1,201 +1,4 @@
-// solicitarNombre()
-
-// function solicitarNombre(){
-//     let nombreIngresado   = prompt("Ingresa tu nombre")
-//     console.log("Hola " + nombreIngresado + " soy tu ayudante mientras compres en nuestra tienda")
-// } 
-
-// // class Producto {
-// //     items(id, nombre, precio) {
-// //         this.id = id;
-// //         this.nombre = nombre;
-// //         this.precio = precio;
-// //     }
-
-
-// const productos =[
-//     {stock: 5, id: 001, nombre: "Camiseta titular 2022", precio: 5800},
-//     {stock: 7, id: 002, nombre: "Camiseta suplente 2022", precio: 5800},
-//     {stock: 9, id: 003, nombre: "Conjunto de entrenamiento 2022", precio: 9800},
-//     {stock: 7, id: 004, nombre: "Short futbol azul 2022", precio: 2250},
-//     {stock: 8, id: 005, nombre: "Short futbol blanco 2022", precio: 2250},
-//     {stock: 7, id: 006, nombre: "Remera entrenamiento azul 2022", precio: 4590},
-//     {stock: 6, id: 007, nombre: "Remera entrenamiento blanca 2022", precio: 4590}
-// ]
-
-
-// comprar();
-
-// function comprar() {
-//     { 
-//         console.log("1: Camiseta titular 2022")
-//         console.log("2: Camiseta suplente 2022")
-//         console.log("3: Conjunto de entrenamiento 2022")
-//         console.log("4:Short futbol azul 2022")
-//         console.log("5: Short futbol blanco 2022")
-//         console.log("6: Remera entrenamiento azul 2022")
-//         console.log("7: Remera entrenamiento blanca 2022")
-        
-    
-//         let seleccion = prompt("Seleccione su producto favorito")
-//         let carrito = []
-
-//         switch(seleccion){
-//             case "1":
-//                 console.log("Se agregará el producto al carrito")
-                
-//                 if(seleccion==1) {  
-//                     carrito.push ([0]) 
-//                 }
-//                 agregarProducto()
-//                 break;
-                
-    
-//             case "2":
-//                 console.log("Se agregará el producto al carrito")
-//                 if(seleccion==2) { 
-//                     carrito.push ([1]) 
-//                 }
-//                 agregarProducto()
-//                 break;
-//             case "3":
-//                 console.log("Se agregará el producto al carrito")
-//                 if(seleccion==3) {  
-//                     carrito.push ([2]) 
-//                 }
-//                 agregarProducto()
-//                 break;
-//             case "4":
-//                 console.log("Se agregará el producto al carrito")
-//                 if(seleccion==4) {  
-//                     carrito.push ([3]) 
-//                 }
-//                 agregarProducto()
-//                 break;
-//             case "5":
-//                 console.log("Se agregará el producto al carrito")
-//                 if(seleccion==5) {  
-//                     carrito.push ([4]) 
-//                 }
-//                 agregarProducto()
-//                 break;
-//             case "6":
-//                 console.log("Se agregará el producto al carrito")
-//                 if(seleccion==6) {  
-//                     carrito.push ([5]) 
-//                 }
-//                 agregarProducto()
-//                 break;
-//             case "7":
-//                 console.log("Se agregará el producto al carrito")
-//                 if(seleccion==7) {  
-//                     carrito.push ([6]) 
-//                 }
-//                 agregarProducto()
-//                 break;
-                
-//             default:
-//                     alert("Operación invalida")
-//                     break;
-//         }
-//     }
-// }
-
-
-
-// function agregarProducto(p){
-//         continuarCompra =confirm("¿Desea contiuar comprando?")
-//         if (continuarCompra) {let continuar = console.log("Ya podes seguir agregando productos a tu carrito")
-//         comprar()
-//         }else {
-//         finalizarCompra =confirm("¿Deseas pagar lo que tenes en tu carrito?")
-//         alert("Aguarde, está siendo derivado al carrito de compras")
-//         if(finalizarCompra){
-//             pagar() } else {
-//             alert("Proceso de compra cancelado")
-//             }
-//         }
-// }
-
-// //TODAS MIS DUDAS VIENEN EN COMO LINKEAR LO QUE SE SELECCIONA EN COMPRAR() PARA LOGRAR PAGARLO ACA
-
-//  function pagar() {
-//      let total = 0
-//      return (carrito) => {
-//         total += productos.id + " " + productos.nombre + " " + productos.precio
-//      }
-//       console.log(carrito)
-//  }
-    
-
-// function seleccionarPago (){
-//     console.log("1: Efectivo")
-//     console.log("2: Tarjeta")
-//     console.log("3: Tranferencia bancaria")
-    
-
-//     let seleccion = prompt("Seleccione un método de pago")
-//     switch(seleccion){
-//         case "1":
-//             let efectivo = alert("Pagarás tu producto en efectivo cuando lo recibas")
-//             finCompra()
-//             break;
-
-//         case "2":
-//             seleccionarTarjeta()
-//             break;
-        
-//         case "3":
-//             let tranferencia = alert("Se ha enviado a su mail los datos para el deposito. Una vez confirmado el pago, el producto se enviará a la dirección ingresada")
-//             finCompra()
-//             break;
-
-//         default:
-//             alert("Operación invalida")
-//             break;
-//     }
-// }
-
-// function seleccionarTarjeta(t){
-
-//     console.log("1: Visa")
-//     console.log("2: Mastercard")
-//     console.log("3: Américan Express")
-//     console.log("3: Cabal")
-    
-
-//     let seleccionT = prompt("Seleccione su tarjeta")
-//     switch(seleccionT){
-//         case "1":
-//             let visa = alert("Pagarás tu producto con Visa")
-//             finCompra()
-//             break;
-//         case "2":
-//             let master = alert("Pagarás tu producto con Mastercard")
-//             finCompra()
-//             break;
-//         case "3":
-//             let american = alert("Pagarás tu producto con American Express")
-//             finCompra()
-//             break;
-//         case "4":
-//             let cabal = alert("Pagarás tu producto con Cabal")
-//             finCompra()
-//             break;
-//         default:
-//             alert("Operación invalida")
-//             break;
-//     }
-// }
-    
-
-//     function finCompra(){
-//         alert("Gracias por confiar en nosotros, que disfrutes tu compra")
-        
-//     }
-
-
-const nov = [
+const productos = [
     {
     stock: 5, 
     id: 001, 
@@ -220,99 +23,169 @@ const nov = [
 
 ]
 
-const strJSOn = JSON.stringify(nov)
+const strJSOn = JSON.stringify(productos)
 localStorage.setItem("producto", strJSOn)
 
-// const contCarrito = JSON.stringify(n)
-// localStorage.setItem("producto", contCarrito)
-
-const contenedorNovedades = document.querySelector(".contenedor-novedades");
-const contenedorCarrito = document.querySelector(".contenedor-carrito");
-const carrito = [];
-const total = 0
-
+const contenedorProducto = document.querySelector(".contenedor-producto");
 
 document.addEventListener('DOMContentLoaded', () => {
-    mostrarNovedades();
+    mostrarProductos();
 })
 
-function mostrarNovedades(){
-    for (const novedades of nov){
+function mostrarProductos(){
+    for (const producto of productos) {
 
-        const divNovedades = document.createElement('div');
-        divNovedades.classList.add('card');
+        const divProducto = document.createElement('div');
+        divProducto.classList.add('card');
 
-        const imgNovedades = document.createElement('img');
-        imgNovedades.classList.add('img-novedades');
-        imgNovedades.src = novedades.img;
+        const imgProducto = document.createElement('img');
+        imgProducto.classList.add('img-producto');
+        imgProducto.src = producto.img;
 
-        const tituloNovedades = document.createElement('h2');
-        tituloNovedades.classList.add('titulo-novedades');
-        tituloNovedades.textContent = novedades.nombre;
+        const tituloProducto = document.createElement('h2');
+        tituloProducto.classList.add('titulo-producto');
+        tituloProducto.textContent = producto.nombre;
 
-        const btnNovedades = document.createElement('button');
-        btnNovedades.classList.add('btn-alcarrito');
-        btnNovedades.textContent = "Añadir al carrito";
-        btnNovedades.onclick = () => {
-            agregarAlCarrito(novedades.nombre)
-        };
+        const precioProducto = document.createElement('h4');
+        precioProducto.classList.add('precio-producto');
+        precioProducto.textContent = producto.precio;
 
-        divNovedades.appendChild(imgNovedades)
-        divNovedades.appendChild(tituloNovedades)
-        divNovedades.appendChild(btnNovedades)
+        const btnProducto = document.createElement('button');
+        btnProducto.classList.add('button');
+        btnProducto.textContent = "Añadir al carrito";
+         btnProducto.onclick = () => {
+             addToCarrito(producto.nombre)
+         };
 
-        contenedorNovedades.appendChild(divNovedades)
+        divProducto.appendChild(imgProducto)
+        divProducto.appendChild(tituloProducto)
+        divProducto.appendChild(btnProducto)
+
+        contenedorProducto.appendChild(divProducto)
 
     }
 }
 
-function agregarAlCarrito(name) {
 
-    const productoAgregado = nov.find( novedades => novedades.nombre === name);
-    carrito.push(productoAgregado);
-    mostrarCarrito(carrito);
+ const clickBtn = document.querySelectorAll('.button')
+ let carrito = []
+ const tbody = document.querySelector('tbody')
+ 
+ clickBtn.forEach(btn => {
+     btn.addEventListener('click', addCarrito)
+ })
+
+function addCarrito(e){
+    const button =e.target
+    const item =button.closest('.card')
+    const itemTitle = item.querySelector('titulo-producto').textContent;
+    const itemPrecio = item.querySelector('precio-producto').textContent
+
+    const nuevoItem = {
+        titulo:itemTitle,
+        precio: itemPrecio,
+        cantidad: 1
+    }
+
+    addToCarrito(nuevoItem)
+
 }
 
-function mostrarCarrito(mCarrito){
-contenedorCarrito.innerHTML = "";
-
-    mCarrito.forEach(mostrarC => {
-        const divNovedades = document.createElement('div');
-        divNovedades.classList.add('card');
-
-        const div2Novedades = document.createElement('div');
-        divNovedades.classList.add('carrito');
-
-        const tituloNovedades = document.createElement('h4');
-        tituloNovedades.classList.add('titulo-novedades');
-        tituloNovedades.textContent = mostrarC.nombre;
-
-        const precioNovedades = document.createElement('h4');
-        precioNovedades.classList.add('precio-novedades');
-        precioNovedades.textContent = mostrarC.precio;
-
-        const totalNovedades = document.createElement('h4');
-        totalNovedades.classList.add('total-novedades');
-        totalNovedades.textContent = compra ();
-        
-
-        divNovedades.appendChild(precioNovedades)
-        divNovedades.appendChild(tituloNovedades)
-        divNovedades.appendChild(div2Novedades)
-        divNovedades.appendChild(totalNovedades)
-        
-
-        contenedorCarrito.appendChild(divNovedades)
-
-    });
-    
+function addToCarrito(nuevoItem){
+  
+    // for(let i =0; i < carrito.length)
+    carrito.push(nuevoItem)
+    console.log(carrito)
+    renderCarrito()
 }
- function compra (){
-     total => total += mostrarC.precio
- }
+
+function renderCarrito(){
+    tbody.innerHTML = ''
+    carrito.map(item =>{
+        const tr = document.createElement('tr');
+        tr.classList.add('itemCarrito');
+        const content = `
+        
+        <th scope="row">1</th>
+                <td class="table__producto">
+                  <h6 class="title">${item.titulo}</h6>
+                </td>
+                <td class="table__precio"><p>${item.precio}</p></td>
+                <td class="table__cantidad">
+                  <input type="number" min="2" value=${item.cantidad}>
+                  <button class="delete btn btn-danger">x</button>
+                </td>
+                
+                `
+        tr.innerHTML = content;
+        tbody.append(tr)
+        
+        
+    })
+}
+
+//USUARIO Y CONTRASEÑA
+
+const email = document.getElementById("inputEmail");
+const contraseña = document.getElementById('inputContraseña');
+const btn_form = document.getElementById('btn-form');
+
+btn_form.addEventListener("click", ingresar)
+
+
+function ingresar(ev){
+    let email= 'cele@gmail.com'
+    let contraseña = '12345678'
+
+    if(document.email.value=='cele@gmail.com' && document.contraseña.value===12345678) ? alert('Sesión iniciada') : alert('Existe un error en usuario o contraseña')}
+
+// function mostrarCarrito(verCarrito){
+
+//     contenedorCarrito.innerHTML = "";
+
+//     verCarrito.forEach(items => {
+        
+//         const divProducto =document.createElement('div');
+//         divProducto.classList.add('card');
+
+//         const trProducto =document.createElement('tr');
+//         divProducto.classList.add('carrito');
+
+//         const idProducto =document.createElement('th');
+//         idProducto.classList.add('titulo-producto');
+//         idProducto.textContent = items.id;
+
+//         const tituloProducto =document.createElement('td');
+//         tituloProducto.classList.add('titulo-producto');
+//         tituloProducto.textContent = items.nombre;
+
+//         const precioProducto = document.createElement('td');
+//         precioProducto.classList.add('precio-producto');
+//         precioProducto.textContent = items.precio;
+
+//         const cantidadProducto =document.createElement('td');
+
+//         const nroProducto =document.createElement('input');
+//         nroProducto.classList.add('input-producto');
+
+//         const btnnroProducto =document.createElement('btn');
+//         btnnroProducto.classList.add('btn-comprar');
+//         btnnroProducto.onclick = () => {
+//             comprar(pago)
+//         }
+
+//         divProducto.appendChild(trProducto)
+//         divProducto.appendChild(idProducto)
+//         divProducto.appendChild(tituloProducto)
+//         divProducto.appendChild(precioProducto)
+//         divProducto.appendChild(cantidadProducto)
+//         cantidadProducto.appendChild(nroProducto)
+//         divProducto.appendChild(btnnroProducto)
+        
+
+//         contenedorCarrito.appendChild(divProducto)
 
 
 
-//Usuario y contraseña
-// const strJSOn = JSON.stringify(nov)
-// localStorage.setItem("producto", strJSOn)
+//     });
+// }
