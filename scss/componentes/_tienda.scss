@@ -5,6 +5,7 @@ body{
     z-index: 100;
   }
 
+
 .description{
         height: 25px;
         overflow: hidden;
@@ -19,7 +20,7 @@ body{
   }
   .title__productos {
       font-weight: bold;
-      color: $colorLightD;
+      color: $colorPrimary;
       font-size: 80px;
   }
   .carrito{
@@ -49,5 +50,6 @@ body{
   .hide, .remove{
     display: none;
   }
+
 
   

@@ -27,15 +27,16 @@ function addCarrito(e){
 
 function addItemCarrito(newItem){
 
-  const alert = document.querySelector('.alert')
-
-  setTimeout( function(){
-    alert.classList.add('hide')
-  }, 2000)
-    alert.classList.remove('hide')
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Producto agregado al carrito',
+    showConfirmButton: false,
+    timer: 1500
+  })
 
   const InputElemnto = tbody.getElementsByClassName('input__elemento')
-  for(let i =0; i < carrito.length ; i++){
+  for(let i =0; i < carrito.length ; i+=1){
     if(carrito[i].title.trim() === newItem.title.trim()){
       carrito[i].cantidad ++;
       const inputValue = InputElemnto[i]
@@ -95,19 +96,21 @@ function removeItemCarrito(e){
   const buttonDelete = e.target
   const tr = buttonDelete.closest(".ItemCarrito")
   const title = tr.querySelector('.title').textContent;
-  for(let i=0; i<carrito.length ; i++){
+  for(let i=0; i<carrito.length ; i+=1){
 
     if(carrito[i].title.trim() === title.trim()){
       carrito.splice(i, 1)
     }
   }
 
-  const alert = document.querySelector('.remove')
 
-  setTimeout( function(){
-    alert.classList.add('remove')
-  }, 2000)
-    alert.classList.remove('remove')
+  Swal.fire({
+    position: 'center',
+    icon: 'error',
+    title: 'Producto removido',
+    showConfirmButton: false,
+    timer: 1500
+  })
 
   tr.remove()
   carritoTotal()
@@ -140,16 +143,45 @@ window.onload = function(){
 
 // USUARIO Y CONTRASEÑA
 
-let usuario = getElementById('inputEmail').value;
-let contraseña = getElementById('inputPass').value;
+let usuario = document.querySelector('#inputEmail').value;
+let contraseña = document.querySelector('#inputPass').value;
 
-function validar (){
-  if(usuario === 'celer' && contraseña === '12345678'){
+let btnForm = document.querySelector('#btn-form')
+btnForm.addEventListener('click', validar)
+
+function validar (datosUsuarios){
+
+  datosUsuarios.forEach( (datos)=>{
+    const {email, password} = datos;
     
-  }
-  
+    datosUsuarios.value =  `
 
+        <input>E-mail: ${email}<input>
+        <input>E-mail: ${password}<input>
+    `
 
+    if(datos.email.trim() === usuario && datos.password.trim() === contraseña){
+      
+    }
+    
+  })
+ 
 
+  obtenerDatosJson()
 
+}
+
+const obtenerDatosJson = ()=>{
+  fetch("https://randomuser.me/api/")
+
+    .then( (respuesta)=>{
+
+            return respuesta.json()
+    })
+    .then( (res)=>{
+      console.log(res)
+    })
+    .catch( (error)=>{
+      console.log("Ocurrió un error: ", error)
+    })
 }
