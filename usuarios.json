@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Pablo",
+        "apellido": "Mendez",
+        "edad": "33",
+        "email": "pablo.mendez@gmail.com",
+        "pass": "pablito33"
+        },
+        {
+        "nombre": "Marcos",
+        "apellido": "Martinez",
+        "edad": "28",
+        "email": "marcos.martinez@gmail.com",
+        "pass": "marquitos28"
+        },
+        {
+        "nombre": "Delfina",
+        "apellido": "Suarez",
+        "edad": "23",
+        "email": "delfina.suarez@gmail.com",
+        "pass": "delfina.23"
+        },
+        {
+        "nombre": "Luciana",
+        "apellido": "Merino",
+        "edad": "38",
+        "email": "luciana.merino@gmail.com",
+        "pass": "luciana.38"
+        },
+        {
+        "nombre": "Diego",
+        "apellido": "Merodio",
+        "edad": "22",
+        "email": "diego.merodio@gmail.com",
+        "pass": "diego.22"
+        },
+        {
+        "nombre": "Soledad",
+        "apellido": "Pastor",
+        "edad": "41",
+        "email": "soledad.pastor@gmail.com",
+        "pass": "soledad.41"
+        }
+]

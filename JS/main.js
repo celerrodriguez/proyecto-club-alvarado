@@ -1,6 +1,7 @@
 const clickBtn = document.querySelectorAll('.button')
 const tbody = document.querySelector('.tbody')
 let carrito = []
+let datosUsuarios1 = []
 
 clickBtn.forEach(btn => {
   btn.addEventListener('click', addCarrito)
@@ -143,45 +144,47 @@ window.onload = function(){
 
 // USUARIO Y CONTRASEÑA
 
-let usuario = document.querySelector('#inputEmail').value;
-let contraseña = document.querySelector('#inputPass').value;
 
-let btnForm = document.querySelector('#btn-form')
-btnForm.addEventListener('click', validar)
 
-function validar (datosUsuarios){
+window.addEventListener('DOMContentLoaded', ()=>{
+     obtenerDatosJson()
+});
 
-  datosUsuarios.forEach( (datos)=>{
-    const {email, password} = datos;
-    
-    datosUsuarios.value =  `
+let formAcceso = document.querySelector('#form-acceso')
+formAcceso.addEventListener('submit', (e)=>{
 
-        <input>E-mail: ${email}<input>
-        <input>E-mail: ${password}<input>
-    `
+  e.preventDefault()
 
-    if(datos.email.trim() === usuario && datos.password.trim() === contraseña){
-      
-    }
-    
-  })
- 
+  let usuario = document.querySelector('#inputEmail').value;
+  let password = document.querySelector('#inputPass').value;
+  let existe = datosUsuarios1.find(datos=> datos.email === usuario && datos.pass === password)
+  
+  console.log(usuario)
+  console.log(password)
 
-  obtenerDatosJson()
+   if (existe){
+     
+    document.querySelector("#acceso-usuarios").innerHTML = ""
+    document.querySelector("#acceso-usuarios").innerHTML = `Hola ${existe.nombre}`
+    document.querySelector("#acceso-usuarios").style.color = "white"
 
-}
+   }
+})
+
 
 const obtenerDatosJson = ()=>{
-  fetch("https://randomuser.me/api/")
+  fetch("./usuarios.json")
 
-    .then( (respuesta)=>{
+    .then( (respuesta)=>
 
-            return respuesta.json()
-    })
+             respuesta.json())
     .then( (res)=>{
-      console.log(res)
+      res.forEach((usuario)=>{
+        datosUsuarios1.push(usuario)
+      })
     })
     .catch( (error)=>{
       console.log("Ocurrió un error: ", error)
     })
 }
+
