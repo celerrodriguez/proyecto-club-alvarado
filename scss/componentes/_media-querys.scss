@@ -421,7 +421,32 @@
     max-width: 75%;
     margin: $marginCenter;
   }
+
+  /*Tienda*/
+
+header {
+  nav{
+    font-size: 12px;
+    div{
+      font-size: 12px;
+
+      .search{
+      display: none;
+      }
+    }
+  }
 }
+
+main{
+  .title__productos{
+    font-size: 52px;
+    color: $colorLightD;
+  }
+}
+
+}
+
+
 
 @media (max-width: 425px) {
 
@@ -466,4 +491,9 @@
     }
   }
 
+   /*Tienda*/
+
+
 }
+
+

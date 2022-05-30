@@ -169,6 +169,7 @@ formAcceso.addEventListener('submit', (e)=>{
     document.querySelector("#acceso-usuarios").style.color = "white"
 
    }
+   Swal.fire('Usuario o contraseña incorrecta. Vuelva a intentarlo')
 })
 
 
